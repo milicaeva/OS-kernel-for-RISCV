@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccem8FI4.s 			page 1
+GAS LISTING /tmp/ccwHAveC.s 			page 1
 
 
    1              		.file	"memoryAllocator.cpp"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
   38              	.LVL3:
   39              		.loc 1 18 33
   40 0020 17070000 		lla	a4,.LANCHOR0
-GAS LISTING /tmp/ccem8FI4.s 			page 2
+GAS LISTING /tmp/ccwHAveC.s 			page 2
 
 
   40      13070700 
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
   24:src/memoryAllocator.cpp **** 
   25:src/memoryAllocator.cpp **** const size_t MemoryAllocator::DBlockSize = sizeof(MemoryAllocator::DBlock);
   26:src/memoryAllocator.cpp **** 
-GAS LISTING /tmp/ccem8FI4.s 			page 3
+GAS LISTING /tmp/ccwHAveC.s 			page 3
 
 
   27:src/memoryAllocator.cpp **** void MemoryAllocator::init(){
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  133              	.L6:
   34:src/memoryAllocator.cpp ****     }
   35:src/memoryAllocator.cpp **** }
-GAS LISTING /tmp/ccem8FI4.s 			page 4
+GAS LISTING /tmp/ccwHAveC.s 			page 4
 
 
  134              		.loc 1 35 1
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  180              	.LVL12:
  181              	.L12:
  182              		.loc 1 42 26 is_stmt 1 discriminator 1
-GAS LISTING /tmp/ccem8FI4.s 			page 5
+GAS LISTING /tmp/ccwHAveC.s 			page 5
 
 
  183 0134 63020506 		beqz	a0,.L9
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  216              		.loc 1 62 9
  217 0168 63820708 		beqz	a5,.L27
   63:src/memoryAllocator.cpp ****             headFull=curr;
-GAS LISTING /tmp/ccem8FI4.s 			page 6
+GAS LISTING /tmp/ccwHAveC.s 			page 6
 
 
   64:src/memoryAllocator.cpp ****             return (char*)curr+DBlockSize;
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
   81:src/memoryAllocator.cpp ****         //ubaciti na odgovarajuce mesto u full listi
   82:src/memoryAllocator.cpp ****         //currUsed je prethodnik curr
   83:src/memoryAllocator.cpp ****     }
-GAS LISTING /tmp/ccem8FI4.s 			page 7
+GAS LISTING /tmp/ccwHAveC.s 			page 7
 
 
   84:src/memoryAllocator.cpp **** 
@@ -418,7 +418,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  293              		.loc 1 47 13
  294 01c0 63860700 		beqz	a5,.L15
   47:src/memoryAllocator.cpp ****             if (curr == headFree) headFree = curr->next;
-GAS LISTING /tmp/ccem8FI4.s 			page 8
+GAS LISTING /tmp/ccwHAveC.s 			page 8
 
 
  295              		.loc 1 47 28 is_stmt 1 discriminator 1
@@ -478,7 +478,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  331              		.loc 1 69 13 is_stmt 1
   69:src/memoryAllocator.cpp ****             headFull=curr;
  332              		.loc 1 69 27 is_stmt 0
-GAS LISTING /tmp/ccem8FI4.s 			page 9
+GAS LISTING /tmp/ccwHAveC.s 			page 9
 
 
  333 0200 23B8A700 		sd	a0,16(a5)
@@ -538,7 +538,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  107:src/memoryAllocator.cpp ****                 curr->next=headFree;
  108:src/memoryAllocator.cpp ****                 headFree->prev=curr;
  109:src/memoryAllocator.cpp ****                 headFree=curr;
-GAS LISTING /tmp/ccem8FI4.s 			page 10
+GAS LISTING /tmp/ccwHAveC.s 			page 10
 
 
  110:src/memoryAllocator.cpp ****                 tryToJoin(headFree);
@@ -598,7 +598,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  390              		.cfi_remember_state
  391              		.cfi_restore 8
  392              		.cfi_def_cfa 2, 16
-GAS LISTING /tmp/ccem8FI4.s 			page 11
+GAS LISTING /tmp/ccwHAveC.s 			page 11
 
 
  393 0250 13010101 		addi	sp,sp,16
@@ -658,7 +658,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  437 028c 13040102 		addi	s0,sp,32
  438              		.cfi_def_cfa 8, 0
   91:src/memoryAllocator.cpp ****     for(DBlock* curr=headFull; curr || ptr<=curr; curr=curr->next){
-GAS LISTING /tmp/ccem8FI4.s 			page 12
+GAS LISTING /tmp/ccwHAveC.s 			page 12
 
 
  439              		.loc 1 91 5 is_stmt 1
@@ -718,7 +718,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  480              		.loc 1 94 13
  481 02c0 63060700 		beqz	a4,.L38
   94:src/memoryAllocator.cpp ****             if(curr->prev) curr->prev->next=curr->next;
-GAS LISTING /tmp/ccem8FI4.s 			page 13
+GAS LISTING /tmp/ccwHAveC.s 			page 13
 
 
  482              		.loc 1 94 28 is_stmt 1 discriminator 1
@@ -778,7 +778,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  517              		.loc 1 115 34 discriminator 3
  518 02f8 13870700 		mv	a4,a5
  115:src/memoryAllocator.cpp ****             curr->next=currFree->next;
-GAS LISTING /tmp/ccem8FI4.s 			page 14
+GAS LISTING /tmp/ccwHAveC.s 			page 14
 
 
  519              		.loc 1 115 29 is_stmt 0 discriminator 3
@@ -838,7 +838,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  554              		.loc 1 122 20 is_stmt 0
  555 0334 13050000 		li	a0,0
  556              	.L35:
-GAS LISTING /tmp/ccem8FI4.s 			page 15
+GAS LISTING /tmp/ccwHAveC.s 			page 15
 
 
  557              	.LBE9:
@@ -898,7 +898,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  108:src/memoryAllocator.cpp ****                 headFree=curr;
  599              		.loc 1 108 17 is_stmt 1
  108:src/memoryAllocator.cpp ****                 headFree=curr;
-GAS LISTING /tmp/ccem8FI4.s 			page 16
+GAS LISTING /tmp/ccwHAveC.s 			page 16
 
 
  600              		.loc 1 108 31 is_stmt 0
@@ -958,7 +958,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  644              		.cfi_offset 1, -8
  645              		.cfi_offset 8, -16
  646              		.cfi_offset 9, -24
-GAS LISTING /tmp/ccem8FI4.s 			page 17
+GAS LISTING /tmp/ccwHAveC.s 			page 17
 
 
  647 03a8 13040102 		addi	s0,sp,32
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  685 03e4 13055007 		li	a0,117
  686 03e8 97000000 		call	__putc@plt
  686      E7800000 
-GAS LISTING /tmp/ccem8FI4.s 			page 18
+GAS LISTING /tmp/ccwHAveC.s 			page 18
 
 
  687              	.LVL54:
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  736              		.set	.LANCHOR1,. + 0
  739              	_ZN15MemoryAllocator11initializedE:
  740 0000 00       		.zero	1
-GAS LISTING /tmp/ccem8FI4.s 			page 19
+GAS LISTING /tmp/ccwHAveC.s 			page 19
 
 
  741 0001 00000000 		.zero	7
@@ -1094,571 +1094,571 @@ GAS LISTING /tmp/ccem8FI4.s 			page 1
  752              		.file 2 "src/../lib/hw.h"
  753              		.file 3 "src/../h/memoryAllocator.hpp"
  754              		.file 4 "src/../h/../lib/console.h"
-GAS LISTING /tmp/ccem8FI4.s 			page 20
+GAS LISTING /tmp/ccwHAveC.s 			page 20
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 memoryAllocator.cpp
-     /tmp/ccem8FI4.s:9      .text:0000000000000000 _Z8printInti
-     /tmp/ccem8FI4.s:13     .text:0000000000000000 .L0 
-     /tmp/ccem8FI4.s:15     .text:0000000000000000 .L0 
-     /tmp/ccem8FI4.s:16     .text:0000000000000004 .L0 
-     /tmp/ccem8FI4.s:20     .text:0000000000000010 .L0 
-     /tmp/ccem8FI4.s:21     .text:0000000000000010 .L0 
-     /tmp/ccem8FI4.s:22     .text:0000000000000010 .L0 
-     /tmp/ccem8FI4.s:24     .text:0000000000000014 .L0 
-     /tmp/ccem8FI4.s:26     .text:0000000000000014 .L0 
-     /tmp/ccem8FI4.s:27     .text:0000000000000014 .L0 
-     /tmp/ccem8FI4.s:29     .text:0000000000000014 .L0 
-     /tmp/ccem8FI4.s:30     .text:0000000000000014 .L0 
-     /tmp/ccem8FI4.s:34     .text:0000000000000018 .L0 
-     /tmp/ccem8FI4.s:35     .text:0000000000000018 .L0 
-     /tmp/ccem8FI4.s:36     .text:0000000000000018 .L0 
-     /tmp/ccem8FI4.s:40     .text:0000000000000020 .L0 
-     /tmp/ccem8FI4.s:44     .text:0000000000000030 .L0 
-     /tmp/ccem8FI4.s:50     .text:0000000000000040 .L0 
-     /tmp/ccem8FI4.s:51     .text:0000000000000040 .L0 
-     /tmp/ccem8FI4.s:54     .text:0000000000000044 .L0 
-     /tmp/ccem8FI4.s:58     .text:0000000000000048 .L0 
-     /tmp/ccem8FI4.s:59     .text:0000000000000048 .L0 
-     /tmp/ccem8FI4.s:63     .text:0000000000000050 .L0 
-     /tmp/ccem8FI4.s:64     .text:0000000000000050 .L0 
-     /tmp/ccem8FI4.s:72     .text:0000000000000068 .L0 
-     /tmp/ccem8FI4.s:73     .text:000000000000006c .L0 
-     /tmp/ccem8FI4.s:75     .text:0000000000000070 .L0 
-     /tmp/ccem8FI4.s:76     .text:0000000000000070 .L0 
-     /tmp/ccem8FI4.s:78     .text:0000000000000074 .L0 
-     /tmp/ccem8FI4.s:80     .text:0000000000000078 .L0 
-     /tmp/ccem8FI4.s:82     .text:000000000000007c .L0 
-     /tmp/ccem8FI4.s:88     .text:000000000000007c _ZN15MemoryAllocator4initEv
-     /tmp/ccem8FI4.s:91     .text:000000000000007c .L0 
-     /tmp/ccem8FI4.s:92     .text:000000000000007c .L0 
-     /tmp/ccem8FI4.s:93     .text:0000000000000080 .L0 
-     /tmp/ccem8FI4.s:95     .text:0000000000000084 .L0 
-     /tmp/ccem8FI4.s:97     .text:0000000000000088 .L0 
-     /tmp/ccem8FI4.s:99     .text:0000000000000088 .L0 
-     /tmp/ccem8FI4.s:100    .text:0000000000000088 .L0 
-     /tmp/ccem8FI4.s:102    .text:0000000000000090 .L0 
-     /tmp/ccem8FI4.s:104    .text:0000000000000094 .L0 
-     /tmp/ccem8FI4.s:105    .text:0000000000000094 .L0 
-     /tmp/ccem8FI4.s:110    .text:00000000000000ac .L0 
-     /tmp/ccem8FI4.s:111    .text:00000000000000ac .L0 
-     /tmp/ccem8FI4.s:116    .text:00000000000000c0 .L0 
-     /tmp/ccem8FI4.s:118    .text:00000000000000c4 .L0 
-     /tmp/ccem8FI4.s:120    .text:00000000000000c8 .L0 
-     /tmp/ccem8FI4.s:122    .text:00000000000000cc .L0 
-     /tmp/ccem8FI4.s:123    .text:00000000000000cc .L0 
-     /tmp/ccem8FI4.s:125    .text:00000000000000d0 .L0 
-     /tmp/ccem8FI4.s:127    .text:00000000000000d4 .L0 
-     /tmp/ccem8FI4.s:128    .text:00000000000000d4 .L0 
-     /tmp/ccem8FI4.s:130    .text:00000000000000d8 .L0 
-     /tmp/ccem8FI4.s:131    .text:00000000000000d8 .L0 
-     /tmp/ccem8FI4.s:135    .text:00000000000000e0 .L0 
-GAS LISTING /tmp/ccem8FI4.s 			page 21
+     /tmp/ccwHAveC.s:9      .text:0000000000000000 _Z8printInti
+     /tmp/ccwHAveC.s:13     .text:0000000000000000 .L0 
+     /tmp/ccwHAveC.s:15     .text:0000000000000000 .L0 
+     /tmp/ccwHAveC.s:16     .text:0000000000000004 .L0 
+     /tmp/ccwHAveC.s:20     .text:0000000000000010 .L0 
+     /tmp/ccwHAveC.s:21     .text:0000000000000010 .L0 
+     /tmp/ccwHAveC.s:22     .text:0000000000000010 .L0 
+     /tmp/ccwHAveC.s:24     .text:0000000000000014 .L0 
+     /tmp/ccwHAveC.s:26     .text:0000000000000014 .L0 
+     /tmp/ccwHAveC.s:27     .text:0000000000000014 .L0 
+     /tmp/ccwHAveC.s:29     .text:0000000000000014 .L0 
+     /tmp/ccwHAveC.s:30     .text:0000000000000014 .L0 
+     /tmp/ccwHAveC.s:34     .text:0000000000000018 .L0 
+     /tmp/ccwHAveC.s:35     .text:0000000000000018 .L0 
+     /tmp/ccwHAveC.s:36     .text:0000000000000018 .L0 
+     /tmp/ccwHAveC.s:40     .text:0000000000000020 .L0 
+     /tmp/ccwHAveC.s:44     .text:0000000000000030 .L0 
+     /tmp/ccwHAveC.s:50     .text:0000000000000040 .L0 
+     /tmp/ccwHAveC.s:51     .text:0000000000000040 .L0 
+     /tmp/ccwHAveC.s:54     .text:0000000000000044 .L0 
+     /tmp/ccwHAveC.s:58     .text:0000000000000048 .L0 
+     /tmp/ccwHAveC.s:59     .text:0000000000000048 .L0 
+     /tmp/ccwHAveC.s:63     .text:0000000000000050 .L0 
+     /tmp/ccwHAveC.s:64     .text:0000000000000050 .L0 
+     /tmp/ccwHAveC.s:72     .text:0000000000000068 .L0 
+     /tmp/ccwHAveC.s:73     .text:000000000000006c .L0 
+     /tmp/ccwHAveC.s:75     .text:0000000000000070 .L0 
+     /tmp/ccwHAveC.s:76     .text:0000000000000070 .L0 
+     /tmp/ccwHAveC.s:78     .text:0000000000000074 .L0 
+     /tmp/ccwHAveC.s:80     .text:0000000000000078 .L0 
+     /tmp/ccwHAveC.s:82     .text:000000000000007c .L0 
+     /tmp/ccwHAveC.s:88     .text:000000000000007c _ZN15MemoryAllocator4initEv
+     /tmp/ccwHAveC.s:91     .text:000000000000007c .L0 
+     /tmp/ccwHAveC.s:92     .text:000000000000007c .L0 
+     /tmp/ccwHAveC.s:93     .text:0000000000000080 .L0 
+     /tmp/ccwHAveC.s:95     .text:0000000000000084 .L0 
+     /tmp/ccwHAveC.s:97     .text:0000000000000088 .L0 
+     /tmp/ccwHAveC.s:99     .text:0000000000000088 .L0 
+     /tmp/ccwHAveC.s:100    .text:0000000000000088 .L0 
+     /tmp/ccwHAveC.s:102    .text:0000000000000090 .L0 
+     /tmp/ccwHAveC.s:104    .text:0000000000000094 .L0 
+     /tmp/ccwHAveC.s:105    .text:0000000000000094 .L0 
+     /tmp/ccwHAveC.s:110    .text:00000000000000ac .L0 
+     /tmp/ccwHAveC.s:111    .text:00000000000000ac .L0 
+     /tmp/ccwHAveC.s:116    .text:00000000000000c0 .L0 
+     /tmp/ccwHAveC.s:118    .text:00000000000000c4 .L0 
+     /tmp/ccwHAveC.s:120    .text:00000000000000c8 .L0 
+     /tmp/ccwHAveC.s:122    .text:00000000000000cc .L0 
+     /tmp/ccwHAveC.s:123    .text:00000000000000cc .L0 
+     /tmp/ccwHAveC.s:125    .text:00000000000000d0 .L0 
+     /tmp/ccwHAveC.s:127    .text:00000000000000d4 .L0 
+     /tmp/ccwHAveC.s:128    .text:00000000000000d4 .L0 
+     /tmp/ccwHAveC.s:130    .text:00000000000000d8 .L0 
+     /tmp/ccwHAveC.s:131    .text:00000000000000d8 .L0 
+     /tmp/ccwHAveC.s:135    .text:00000000000000e0 .L0 
+GAS LISTING /tmp/ccwHAveC.s 			page 21
 
 
-     /tmp/ccem8FI4.s:136    .text:00000000000000e4 .L0 
-     /tmp/ccem8FI4.s:137    .text:00000000000000e4 .L0 
-     /tmp/ccem8FI4.s:139    .text:00000000000000e8 .L0 
-     /tmp/ccem8FI4.s:141    .text:00000000000000ec .L0 
-     /tmp/ccem8FI4.s:147    .text:00000000000000ec _ZN15MemoryAllocator9mem_allocEm
-     /tmp/ccem8FI4.s:150    .text:00000000000000ec .L0 
-     /tmp/ccem8FI4.s:152    .text:00000000000000ec .L0 
-     /tmp/ccem8FI4.s:153    .text:00000000000000f0 .L0 
-     /tmp/ccem8FI4.s:155    .text:00000000000000f4 .L0 
-     /tmp/ccem8FI4.s:157    .text:00000000000000f8 .L0 
-     /tmp/ccem8FI4.s:159    .text:00000000000000f8 .L0 
-     /tmp/ccem8FI4.s:162    .text:0000000000000100 .L0 
-     /tmp/ccem8FI4.s:169    .text:0000000000000120 .L0 
-     /tmp/ccem8FI4.s:171    .text:0000000000000124 .L0 
-     /tmp/ccem8FI4.s:174    .text:0000000000000128 .L0 
-     /tmp/ccem8FI4.s:176    .text:0000000000000128 .L0 
-     /tmp/ccem8FI4.s:177    .text:0000000000000128 .L0 
-     /tmp/ccem8FI4.s:183    .text:0000000000000134 .L0 
-     /tmp/ccem8FI4.s:186    .text:0000000000000138 .L0 
-     /tmp/ccem8FI4.s:187    .text:0000000000000138 .L0 
-     /tmp/ccem8FI4.s:189    .text:000000000000013c .L0 
-     /tmp/ccem8FI4.s:191    .text:0000000000000140 .L0 
-     /tmp/ccem8FI4.s:193    .text:0000000000000144 .L0 
-     /tmp/ccem8FI4.s:194    .text:0000000000000144 .L0 
-     /tmp/ccem8FI4.s:197    .text:000000000000014c .L0 
-     /tmp/ccem8FI4.s:198    .text:000000000000014c .L0 
-     /tmp/ccem8FI4.s:200    .text:0000000000000150 .L0 
-     /tmp/ccem8FI4.s:203    .text:0000000000000154 .L0 
-     /tmp/ccem8FI4.s:204    .text:0000000000000154 .L0 
-     /tmp/ccem8FI4.s:206    .text:0000000000000158 .L0 
-     /tmp/ccem8FI4.s:207    .text:0000000000000158 .L0 
-     /tmp/ccem8FI4.s:209    .text:000000000000015c .L0 
-     /tmp/ccem8FI4.s:210    .text:000000000000015c .L0 
-     /tmp/ccem8FI4.s:214    .text:0000000000000160 .L0 
-     /tmp/ccem8FI4.s:215    .text:0000000000000160 .L0 
-     /tmp/ccem8FI4.s:217    .text:0000000000000168 .L0 
-     /tmp/ccem8FI4.s:219    .text:000000000000016c .L0 
-     /tmp/ccem8FI4.s:223    .text:0000000000000170 .L0 
-     /tmp/ccem8FI4.s:224    .text:0000000000000170 .L0 
-     /tmp/ccem8FI4.s:226    .text:0000000000000174 .L0 
-     /tmp/ccem8FI4.s:229    .text:0000000000000178 .L0 
-     /tmp/ccem8FI4.s:231    .text:000000000000017c .L0 
-     /tmp/ccem8FI4.s:234    .text:0000000000000180 .L0 
-     /tmp/ccem8FI4.s:235    .text:0000000000000180 .L0 
-     /tmp/ccem8FI4.s:237    .text:0000000000000184 .L0 
-     /tmp/ccem8FI4.s:239    .text:0000000000000188 .L0 
-     /tmp/ccem8FI4.s:240    .text:0000000000000188 .L0 
-     /tmp/ccem8FI4.s:243    .text:000000000000018c .L0 
-     /tmp/ccem8FI4.s:244    .text:000000000000018c .L0 
-     /tmp/ccem8FI4.s:246    .text:0000000000000190 .L0 
-     /tmp/ccem8FI4.s:247    .text:0000000000000190 .L0 
-     /tmp/ccem8FI4.s:249    .text:0000000000000194 .L0 
-     /tmp/ccem8FI4.s:250    .text:0000000000000194 .L0 
-     /tmp/ccem8FI4.s:256    .text:0000000000000198 .L0 
-     /tmp/ccem8FI4.s:257    .text:000000000000019c .L0 
-     /tmp/ccem8FI4.s:258    .text:000000000000019c .L0 
-     /tmp/ccem8FI4.s:259    .text:000000000000019c .L0 
-GAS LISTING /tmp/ccem8FI4.s 			page 22
+     /tmp/ccwHAveC.s:136    .text:00000000000000e4 .L0 
+     /tmp/ccwHAveC.s:137    .text:00000000000000e4 .L0 
+     /tmp/ccwHAveC.s:139    .text:00000000000000e8 .L0 
+     /tmp/ccwHAveC.s:141    .text:00000000000000ec .L0 
+     /tmp/ccwHAveC.s:147    .text:00000000000000ec _ZN15MemoryAllocator9mem_allocEm
+     /tmp/ccwHAveC.s:150    .text:00000000000000ec .L0 
+     /tmp/ccwHAveC.s:152    .text:00000000000000ec .L0 
+     /tmp/ccwHAveC.s:153    .text:00000000000000f0 .L0 
+     /tmp/ccwHAveC.s:155    .text:00000000000000f4 .L0 
+     /tmp/ccwHAveC.s:157    .text:00000000000000f8 .L0 
+     /tmp/ccwHAveC.s:159    .text:00000000000000f8 .L0 
+     /tmp/ccwHAveC.s:162    .text:0000000000000100 .L0 
+     /tmp/ccwHAveC.s:169    .text:0000000000000120 .L0 
+     /tmp/ccwHAveC.s:171    .text:0000000000000124 .L0 
+     /tmp/ccwHAveC.s:174    .text:0000000000000128 .L0 
+     /tmp/ccwHAveC.s:176    .text:0000000000000128 .L0 
+     /tmp/ccwHAveC.s:177    .text:0000000000000128 .L0 
+     /tmp/ccwHAveC.s:183    .text:0000000000000134 .L0 
+     /tmp/ccwHAveC.s:186    .text:0000000000000138 .L0 
+     /tmp/ccwHAveC.s:187    .text:0000000000000138 .L0 
+     /tmp/ccwHAveC.s:189    .text:000000000000013c .L0 
+     /tmp/ccwHAveC.s:191    .text:0000000000000140 .L0 
+     /tmp/ccwHAveC.s:193    .text:0000000000000144 .L0 
+     /tmp/ccwHAveC.s:194    .text:0000000000000144 .L0 
+     /tmp/ccwHAveC.s:197    .text:000000000000014c .L0 
+     /tmp/ccwHAveC.s:198    .text:000000000000014c .L0 
+     /tmp/ccwHAveC.s:200    .text:0000000000000150 .L0 
+     /tmp/ccwHAveC.s:203    .text:0000000000000154 .L0 
+     /tmp/ccwHAveC.s:204    .text:0000000000000154 .L0 
+     /tmp/ccwHAveC.s:206    .text:0000000000000158 .L0 
+     /tmp/ccwHAveC.s:207    .text:0000000000000158 .L0 
+     /tmp/ccwHAveC.s:209    .text:000000000000015c .L0 
+     /tmp/ccwHAveC.s:210    .text:000000000000015c .L0 
+     /tmp/ccwHAveC.s:214    .text:0000000000000160 .L0 
+     /tmp/ccwHAveC.s:215    .text:0000000000000160 .L0 
+     /tmp/ccwHAveC.s:217    .text:0000000000000168 .L0 
+     /tmp/ccwHAveC.s:219    .text:000000000000016c .L0 
+     /tmp/ccwHAveC.s:223    .text:0000000000000170 .L0 
+     /tmp/ccwHAveC.s:224    .text:0000000000000170 .L0 
+     /tmp/ccwHAveC.s:226    .text:0000000000000174 .L0 
+     /tmp/ccwHAveC.s:229    .text:0000000000000178 .L0 
+     /tmp/ccwHAveC.s:231    .text:000000000000017c .L0 
+     /tmp/ccwHAveC.s:234    .text:0000000000000180 .L0 
+     /tmp/ccwHAveC.s:235    .text:0000000000000180 .L0 
+     /tmp/ccwHAveC.s:237    .text:0000000000000184 .L0 
+     /tmp/ccwHAveC.s:239    .text:0000000000000188 .L0 
+     /tmp/ccwHAveC.s:240    .text:0000000000000188 .L0 
+     /tmp/ccwHAveC.s:243    .text:000000000000018c .L0 
+     /tmp/ccwHAveC.s:244    .text:000000000000018c .L0 
+     /tmp/ccwHAveC.s:246    .text:0000000000000190 .L0 
+     /tmp/ccwHAveC.s:247    .text:0000000000000190 .L0 
+     /tmp/ccwHAveC.s:249    .text:0000000000000194 .L0 
+     /tmp/ccwHAveC.s:250    .text:0000000000000194 .L0 
+     /tmp/ccwHAveC.s:256    .text:0000000000000198 .L0 
+     /tmp/ccwHAveC.s:257    .text:000000000000019c .L0 
+     /tmp/ccwHAveC.s:258    .text:000000000000019c .L0 
+     /tmp/ccwHAveC.s:259    .text:000000000000019c .L0 
+GAS LISTING /tmp/ccwHAveC.s 			page 22
 
 
-     /tmp/ccem8FI4.s:261    .text:00000000000001a0 .L0 
-     /tmp/ccem8FI4.s:265    .text:00000000000001a4 .L0 
-     /tmp/ccem8FI4.s:270    .text:00000000000001a4 .L0 
-     /tmp/ccem8FI4.s:271    .text:00000000000001a4 .L0 
-     /tmp/ccem8FI4.s:272    .text:00000000000001a4 .L0 
-     /tmp/ccem8FI4.s:275    .text:00000000000001a8 .L0 
-     /tmp/ccem8FI4.s:279    .text:00000000000001ac .L0 
-     /tmp/ccem8FI4.s:280    .text:00000000000001ac .L0 
-     /tmp/ccem8FI4.s:283    .text:00000000000001b0 .L0 
-     /tmp/ccem8FI4.s:285    .text:00000000000001b4 .L0 
-     /tmp/ccem8FI4.s:286    .text:00000000000001b4 .L0 
-     /tmp/ccem8FI4.s:288    .text:00000000000001b8 .L0 
-     /tmp/ccem8FI4.s:291    .text:00000000000001bc .L0 
-     /tmp/ccem8FI4.s:292    .text:00000000000001bc .L0 
-     /tmp/ccem8FI4.s:294    .text:00000000000001c0 .L0 
-     /tmp/ccem8FI4.s:296    .text:00000000000001c4 .L0 
-     /tmp/ccem8FI4.s:297    .text:00000000000001c4 .L0 
-     /tmp/ccem8FI4.s:299    .text:00000000000001c8 .L0 
-     /tmp/ccem8FI4.s:302    .text:00000000000001cc .L0 
-     /tmp/ccem8FI4.s:305    .text:00000000000001d0 .L0 
-     /tmp/ccem8FI4.s:306    .text:00000000000001d0 .L0 
-     /tmp/ccem8FI4.s:308    .text:00000000000001d4 .L0 
-     /tmp/ccem8FI4.s:312    .text:00000000000001dc .L0 
-     /tmp/ccem8FI4.s:313    .text:00000000000001dc .L0 
-     /tmp/ccem8FI4.s:315    .text:00000000000001e0 .L0 
-     /tmp/ccem8FI4.s:319    .text:00000000000001ec .L0 
-     /tmp/ccem8FI4.s:320    .text:00000000000001ec .L0 
-     /tmp/ccem8FI4.s:322    .text:00000000000001f4 .L0 
-     /tmp/ccem8FI4.s:323    .text:00000000000001f4 .L0 
-     /tmp/ccem8FI4.s:329    .text:00000000000001fc .L0 
-     /tmp/ccem8FI4.s:330    .text:00000000000001fc .L0 
-     /tmp/ccem8FI4.s:332    .text:0000000000000200 .L0 
-     /tmp/ccem8FI4.s:333    .text:0000000000000200 .L0 
-     /tmp/ccem8FI4.s:335    .text:0000000000000204 .L0 
-     /tmp/ccem8FI4.s:336    .text:0000000000000204 .L0 
-     /tmp/ccem8FI4.s:338    .text:000000000000020c .L0 
-     /tmp/ccem8FI4.s:339    .text:000000000000020c .L0 
-     /tmp/ccem8FI4.s:347    .text:0000000000000214 .L0 
-     /tmp/ccem8FI4.s:355    .text:0000000000000224 .L0 
-     /tmp/ccem8FI4.s:361    .text:0000000000000224 _ZN15MemoryAllocator9tryToJoinEPNS_6DBlockE
-     /tmp/ccem8FI4.s:364    .text:0000000000000224 .L0 
-     /tmp/ccem8FI4.s:366    .text:0000000000000224 .L0 
-     /tmp/ccem8FI4.s:367    .text:0000000000000228 .L0 
-     /tmp/ccem8FI4.s:369    .text:000000000000022c .L0 
-     /tmp/ccem8FI4.s:371    .text:0000000000000230 .L0 
-     /tmp/ccem8FI4.s:373    .text:0000000000000230 .L0 
-     /tmp/ccem8FI4.s:375    .text:0000000000000234 .L0 
-     /tmp/ccem8FI4.s:376    .text:0000000000000234 .L0 
-     /tmp/ccem8FI4.s:378    .text:0000000000000238 .L0 
-     /tmp/ccem8FI4.s:380    .text:000000000000023c .L0 
-     /tmp/ccem8FI4.s:382    .text:0000000000000240 .L0 
-     /tmp/ccem8FI4.s:384    .text:0000000000000244 .L0 
-     /tmp/ccem8FI4.s:386    .text:0000000000000248 .L0 
-     /tmp/ccem8FI4.s:389    .text:000000000000024c .L0 
-     /tmp/ccem8FI4.s:390    .text:0000000000000250 .L0 
-     /tmp/ccem8FI4.s:391    .text:0000000000000250 .L0 
-     /tmp/ccem8FI4.s:392    .text:0000000000000250 .L0 
-GAS LISTING /tmp/ccem8FI4.s 			page 23
+     /tmp/ccwHAveC.s:261    .text:00000000000001a0 .L0 
+     /tmp/ccwHAveC.s:265    .text:00000000000001a4 .L0 
+     /tmp/ccwHAveC.s:270    .text:00000000000001a4 .L0 
+     /tmp/ccwHAveC.s:271    .text:00000000000001a4 .L0 
+     /tmp/ccwHAveC.s:272    .text:00000000000001a4 .L0 
+     /tmp/ccwHAveC.s:275    .text:00000000000001a8 .L0 
+     /tmp/ccwHAveC.s:279    .text:00000000000001ac .L0 
+     /tmp/ccwHAveC.s:280    .text:00000000000001ac .L0 
+     /tmp/ccwHAveC.s:283    .text:00000000000001b0 .L0 
+     /tmp/ccwHAveC.s:285    .text:00000000000001b4 .L0 
+     /tmp/ccwHAveC.s:286    .text:00000000000001b4 .L0 
+     /tmp/ccwHAveC.s:288    .text:00000000000001b8 .L0 
+     /tmp/ccwHAveC.s:291    .text:00000000000001bc .L0 
+     /tmp/ccwHAveC.s:292    .text:00000000000001bc .L0 
+     /tmp/ccwHAveC.s:294    .text:00000000000001c0 .L0 
+     /tmp/ccwHAveC.s:296    .text:00000000000001c4 .L0 
+     /tmp/ccwHAveC.s:297    .text:00000000000001c4 .L0 
+     /tmp/ccwHAveC.s:299    .text:00000000000001c8 .L0 
+     /tmp/ccwHAveC.s:302    .text:00000000000001cc .L0 
+     /tmp/ccwHAveC.s:305    .text:00000000000001d0 .L0 
+     /tmp/ccwHAveC.s:306    .text:00000000000001d0 .L0 
+     /tmp/ccwHAveC.s:308    .text:00000000000001d4 .L0 
+     /tmp/ccwHAveC.s:312    .text:00000000000001dc .L0 
+     /tmp/ccwHAveC.s:313    .text:00000000000001dc .L0 
+     /tmp/ccwHAveC.s:315    .text:00000000000001e0 .L0 
+     /tmp/ccwHAveC.s:319    .text:00000000000001ec .L0 
+     /tmp/ccwHAveC.s:320    .text:00000000000001ec .L0 
+     /tmp/ccwHAveC.s:322    .text:00000000000001f4 .L0 
+     /tmp/ccwHAveC.s:323    .text:00000000000001f4 .L0 
+     /tmp/ccwHAveC.s:329    .text:00000000000001fc .L0 
+     /tmp/ccwHAveC.s:330    .text:00000000000001fc .L0 
+     /tmp/ccwHAveC.s:332    .text:0000000000000200 .L0 
+     /tmp/ccwHAveC.s:333    .text:0000000000000200 .L0 
+     /tmp/ccwHAveC.s:335    .text:0000000000000204 .L0 
+     /tmp/ccwHAveC.s:336    .text:0000000000000204 .L0 
+     /tmp/ccwHAveC.s:338    .text:000000000000020c .L0 
+     /tmp/ccwHAveC.s:339    .text:000000000000020c .L0 
+     /tmp/ccwHAveC.s:347    .text:0000000000000214 .L0 
+     /tmp/ccwHAveC.s:355    .text:0000000000000224 .L0 
+     /tmp/ccwHAveC.s:361    .text:0000000000000224 _ZN15MemoryAllocator9tryToJoinEPNS_6DBlockE
+     /tmp/ccwHAveC.s:364    .text:0000000000000224 .L0 
+     /tmp/ccwHAveC.s:366    .text:0000000000000224 .L0 
+     /tmp/ccwHAveC.s:367    .text:0000000000000228 .L0 
+     /tmp/ccwHAveC.s:369    .text:000000000000022c .L0 
+     /tmp/ccwHAveC.s:371    .text:0000000000000230 .L0 
+     /tmp/ccwHAveC.s:373    .text:0000000000000230 .L0 
+     /tmp/ccwHAveC.s:375    .text:0000000000000234 .L0 
+     /tmp/ccwHAveC.s:376    .text:0000000000000234 .L0 
+     /tmp/ccwHAveC.s:378    .text:0000000000000238 .L0 
+     /tmp/ccwHAveC.s:380    .text:000000000000023c .L0 
+     /tmp/ccwHAveC.s:382    .text:0000000000000240 .L0 
+     /tmp/ccwHAveC.s:384    .text:0000000000000244 .L0 
+     /tmp/ccwHAveC.s:386    .text:0000000000000248 .L0 
+     /tmp/ccwHAveC.s:389    .text:000000000000024c .L0 
+     /tmp/ccwHAveC.s:390    .text:0000000000000250 .L0 
+     /tmp/ccwHAveC.s:391    .text:0000000000000250 .L0 
+     /tmp/ccwHAveC.s:392    .text:0000000000000250 .L0 
+GAS LISTING /tmp/ccwHAveC.s 			page 23
 
 
-     /tmp/ccem8FI4.s:394    .text:0000000000000254 .L0 
-     /tmp/ccem8FI4.s:397    .text:0000000000000258 .L0 
-     /tmp/ccem8FI4.s:399    .text:0000000000000258 .L0 
-     /tmp/ccem8FI4.s:400    .text:0000000000000258 .L0 
-     /tmp/ccem8FI4.s:402    .text:000000000000025c .L0 
-     /tmp/ccem8FI4.s:405    .text:0000000000000264 .L0 
-     /tmp/ccem8FI4.s:406    .text:0000000000000264 .L0 
-     /tmp/ccem8FI4.s:408    .text:0000000000000268 .L0 
-     /tmp/ccem8FI4.s:410    .text:000000000000026c .L0 
-     /tmp/ccem8FI4.s:412    .text:0000000000000270 .L0 
-     /tmp/ccem8FI4.s:413    .text:0000000000000270 .L0 
-     /tmp/ccem8FI4.s:415    .text:0000000000000278 .L0 
-     /tmp/ccem8FI4.s:421    .text:0000000000000278 _ZN15MemoryAllocator8mem_freeEPv
-     /tmp/ccem8FI4.s:424    .text:0000000000000278 .L0 
-     /tmp/ccem8FI4.s:426    .text:0000000000000278 .L0 
-     /tmp/ccem8FI4.s:427    .text:0000000000000278 .L0 
-     /tmp/ccem8FI4.s:429    .text:000000000000027c .L0 
-     /tmp/ccem8FI4.s:430    .text:0000000000000280 .L0 
-     /tmp/ccem8FI4.s:434    .text:000000000000028c .L0 
-     /tmp/ccem8FI4.s:435    .text:000000000000028c .L0 
-     /tmp/ccem8FI4.s:436    .text:000000000000028c .L0 
-     /tmp/ccem8FI4.s:438    .text:0000000000000290 .L0 
-     /tmp/ccem8FI4.s:440    .text:0000000000000290 .L0 
-     /tmp/ccem8FI4.s:441    .text:0000000000000290 .L0 
-     /tmp/ccem8FI4.s:445    .text:0000000000000294 .L0 
-     /tmp/ccem8FI4.s:446    .text:0000000000000294 .L0 
-     /tmp/ccem8FI4.s:456    .text:00000000000002a4 .L0 
-     /tmp/ccem8FI4.s:459    .text:00000000000002a8 .L0 
-     /tmp/ccem8FI4.s:460    .text:00000000000002a8 .L0 
-     /tmp/ccem8FI4.s:464    .text:00000000000002ac .L0 
-     /tmp/ccem8FI4.s:466    .text:00000000000002b0 .L0 
-     /tmp/ccem8FI4.s:469    .text:00000000000002b4 .L0 
-     /tmp/ccem8FI4.s:478    .text:00000000000002bc .L0 
-     /tmp/ccem8FI4.s:479    .text:00000000000002bc .L0 
-     /tmp/ccem8FI4.s:481    .text:00000000000002c0 .L0 
-     /tmp/ccem8FI4.s:483    .text:00000000000002c4 .L0 
-     /tmp/ccem8FI4.s:484    .text:00000000000002c4 .L0 
-     /tmp/ccem8FI4.s:486    .text:00000000000002c8 .L0 
-     /tmp/ccem8FI4.s:489    .text:00000000000002cc .L0 
-     /tmp/ccem8FI4.s:490    .text:00000000000002cc .L0 
-     /tmp/ccem8FI4.s:492    .text:00000000000002d0 .L0 
-     /tmp/ccem8FI4.s:494    .text:00000000000002d4 .L0 
-     /tmp/ccem8FI4.s:495    .text:00000000000002d4 .L0 
-     /tmp/ccem8FI4.s:497    .text:00000000000002d8 .L0 
-     /tmp/ccem8FI4.s:500    .text:00000000000002dc .L0 
-     /tmp/ccem8FI4.s:503    .text:00000000000002e0 .L0 
-     /tmp/ccem8FI4.s:504    .text:00000000000002e0 .L0 
-     /tmp/ccem8FI4.s:506    .text:00000000000002e4 .L0 
-     /tmp/ccem8FI4.s:508    .text:00000000000002e8 .L0 
-     /tmp/ccem8FI4.s:509    .text:00000000000002e8 .L0 
-     /tmp/ccem8FI4.s:511    .text:00000000000002f0 .L0 
-     /tmp/ccem8FI4.s:513    .text:00000000000002f4 .L0 
-     /tmp/ccem8FI4.s:517    .text:00000000000002f8 .L0 
-     /tmp/ccem8FI4.s:518    .text:00000000000002f8 .L0 
-     /tmp/ccem8FI4.s:520    .text:00000000000002fc .L0 
-     /tmp/ccem8FI4.s:523    .text:0000000000000300 .L0 
-     /tmp/ccem8FI4.s:525    .text:0000000000000304 .L0 
-GAS LISTING /tmp/ccem8FI4.s 			page 24
+     /tmp/ccwHAveC.s:394    .text:0000000000000254 .L0 
+     /tmp/ccwHAveC.s:397    .text:0000000000000258 .L0 
+     /tmp/ccwHAveC.s:399    .text:0000000000000258 .L0 
+     /tmp/ccwHAveC.s:400    .text:0000000000000258 .L0 
+     /tmp/ccwHAveC.s:402    .text:000000000000025c .L0 
+     /tmp/ccwHAveC.s:405    .text:0000000000000264 .L0 
+     /tmp/ccwHAveC.s:406    .text:0000000000000264 .L0 
+     /tmp/ccwHAveC.s:408    .text:0000000000000268 .L0 
+     /tmp/ccwHAveC.s:410    .text:000000000000026c .L0 
+     /tmp/ccwHAveC.s:412    .text:0000000000000270 .L0 
+     /tmp/ccwHAveC.s:413    .text:0000000000000270 .L0 
+     /tmp/ccwHAveC.s:415    .text:0000000000000278 .L0 
+     /tmp/ccwHAveC.s:421    .text:0000000000000278 _ZN15MemoryAllocator8mem_freeEPv
+     /tmp/ccwHAveC.s:424    .text:0000000000000278 .L0 
+     /tmp/ccwHAveC.s:426    .text:0000000000000278 .L0 
+     /tmp/ccwHAveC.s:427    .text:0000000000000278 .L0 
+     /tmp/ccwHAveC.s:429    .text:000000000000027c .L0 
+     /tmp/ccwHAveC.s:430    .text:0000000000000280 .L0 
+     /tmp/ccwHAveC.s:434    .text:000000000000028c .L0 
+     /tmp/ccwHAveC.s:435    .text:000000000000028c .L0 
+     /tmp/ccwHAveC.s:436    .text:000000000000028c .L0 
+     /tmp/ccwHAveC.s:438    .text:0000000000000290 .L0 
+     /tmp/ccwHAveC.s:440    .text:0000000000000290 .L0 
+     /tmp/ccwHAveC.s:441    .text:0000000000000290 .L0 
+     /tmp/ccwHAveC.s:445    .text:0000000000000294 .L0 
+     /tmp/ccwHAveC.s:446    .text:0000000000000294 .L0 
+     /tmp/ccwHAveC.s:456    .text:00000000000002a4 .L0 
+     /tmp/ccwHAveC.s:459    .text:00000000000002a8 .L0 
+     /tmp/ccwHAveC.s:460    .text:00000000000002a8 .L0 
+     /tmp/ccwHAveC.s:464    .text:00000000000002ac .L0 
+     /tmp/ccwHAveC.s:466    .text:00000000000002b0 .L0 
+     /tmp/ccwHAveC.s:469    .text:00000000000002b4 .L0 
+     /tmp/ccwHAveC.s:478    .text:00000000000002bc .L0 
+     /tmp/ccwHAveC.s:479    .text:00000000000002bc .L0 
+     /tmp/ccwHAveC.s:481    .text:00000000000002c0 .L0 
+     /tmp/ccwHAveC.s:483    .text:00000000000002c4 .L0 
+     /tmp/ccwHAveC.s:484    .text:00000000000002c4 .L0 
+     /tmp/ccwHAveC.s:486    .text:00000000000002c8 .L0 
+     /tmp/ccwHAveC.s:489    .text:00000000000002cc .L0 
+     /tmp/ccwHAveC.s:490    .text:00000000000002cc .L0 
+     /tmp/ccwHAveC.s:492    .text:00000000000002d0 .L0 
+     /tmp/ccwHAveC.s:494    .text:00000000000002d4 .L0 
+     /tmp/ccwHAveC.s:495    .text:00000000000002d4 .L0 
+     /tmp/ccwHAveC.s:497    .text:00000000000002d8 .L0 
+     /tmp/ccwHAveC.s:500    .text:00000000000002dc .L0 
+     /tmp/ccwHAveC.s:503    .text:00000000000002e0 .L0 
+     /tmp/ccwHAveC.s:504    .text:00000000000002e0 .L0 
+     /tmp/ccwHAveC.s:506    .text:00000000000002e4 .L0 
+     /tmp/ccwHAveC.s:508    .text:00000000000002e8 .L0 
+     /tmp/ccwHAveC.s:509    .text:00000000000002e8 .L0 
+     /tmp/ccwHAveC.s:511    .text:00000000000002f0 .L0 
+     /tmp/ccwHAveC.s:513    .text:00000000000002f4 .L0 
+     /tmp/ccwHAveC.s:517    .text:00000000000002f8 .L0 
+     /tmp/ccwHAveC.s:518    .text:00000000000002f8 .L0 
+     /tmp/ccwHAveC.s:520    .text:00000000000002fc .L0 
+     /tmp/ccwHAveC.s:523    .text:0000000000000300 .L0 
+     /tmp/ccwHAveC.s:525    .text:0000000000000304 .L0 
+GAS LISTING /tmp/ccwHAveC.s 			page 24
 
 
-     /tmp/ccem8FI4.s:528    .text:0000000000000308 .L0 
-     /tmp/ccem8FI4.s:529    .text:0000000000000308 .L0 
-     /tmp/ccem8FI4.s:531    .text:000000000000030c .L0 
-     /tmp/ccem8FI4.s:533    .text:0000000000000310 .L0 
-     /tmp/ccem8FI4.s:534    .text:0000000000000310 .L0 
-     /tmp/ccem8FI4.s:537    .text:0000000000000314 .L0 
-     /tmp/ccem8FI4.s:538    .text:0000000000000314 .L0 
-     /tmp/ccem8FI4.s:540    .text:0000000000000318 .L0 
-     /tmp/ccem8FI4.s:541    .text:0000000000000318 .L0 
-     /tmp/ccem8FI4.s:543    .text:000000000000031c .L0 
-     /tmp/ccem8FI4.s:544    .text:000000000000031c .L0 
-     /tmp/ccem8FI4.s:549    .text:0000000000000328 .L0 
-     /tmp/ccem8FI4.s:550    .text:0000000000000328 .L0 
-     /tmp/ccem8FI4.s:554    .text:0000000000000334 .L0 
-     /tmp/ccem8FI4.s:555    .text:0000000000000334 .L0 
-     /tmp/ccem8FI4.s:561    .text:0000000000000338 .L0 
-     /tmp/ccem8FI4.s:562    .text:000000000000033c .L0 
-     /tmp/ccem8FI4.s:563    .text:000000000000033c .L0 
-     /tmp/ccem8FI4.s:565    .text:0000000000000340 .L0 
-     /tmp/ccem8FI4.s:566    .text:0000000000000340 .L0 
-     /tmp/ccem8FI4.s:568    .text:0000000000000344 .L0 
-     /tmp/ccem8FI4.s:571    .text:0000000000000348 .L0 
-     /tmp/ccem8FI4.s:575    .text:000000000000034c .L0 
-     /tmp/ccem8FI4.s:580    .text:000000000000034c .L0 
-     /tmp/ccem8FI4.s:581    .text:000000000000034c .L0 
-     /tmp/ccem8FI4.s:583    .text:0000000000000350 .L0 
-     /tmp/ccem8FI4.s:587    .text:000000000000035c .L0 
-     /tmp/ccem8FI4.s:588    .text:000000000000035c .L0 
-     /tmp/ccem8FI4.s:590    .text:0000000000000364 .L0 
-     /tmp/ccem8FI4.s:591    .text:0000000000000364 .L0 
-     /tmp/ccem8FI4.s:597    .text:000000000000036c .L0 
-     /tmp/ccem8FI4.s:598    .text:000000000000036c .L0 
-     /tmp/ccem8FI4.s:600    .text:0000000000000370 .L0 
-     /tmp/ccem8FI4.s:601    .text:0000000000000370 .L0 
-     /tmp/ccem8FI4.s:603    .text:0000000000000374 .L0 
-     /tmp/ccem8FI4.s:604    .text:0000000000000374 .L0 
-     /tmp/ccem8FI4.s:606    .text:000000000000037c .L0 
-     /tmp/ccem8FI4.s:607    .text:000000000000037c .L0 
-     /tmp/ccem8FI4.s:612    .text:0000000000000388 .L0 
-     /tmp/ccem8FI4.s:613    .text:0000000000000388 .L0 
-     /tmp/ccem8FI4.s:617    .text:0000000000000390 .L0 
-     /tmp/ccem8FI4.s:618    .text:0000000000000390 .L0 
-     /tmp/ccem8FI4.s:619    .text:0000000000000390 .L0 
-     /tmp/ccem8FI4.s:620    .text:0000000000000390 .L0 
-     /tmp/ccem8FI4.s:625    .text:0000000000000390 .L0 
-     /tmp/ccem8FI4.s:628    .text:0000000000000394 .L0 
-     /tmp/ccem8FI4.s:629    .text:0000000000000398 .L0 
-     /tmp/ccem8FI4.s:635    .text:0000000000000398 _ZN15MemoryAllocator8printMemEv
-     /tmp/ccem8FI4.s:638    .text:0000000000000398 .L0 
-     /tmp/ccem8FI4.s:639    .text:0000000000000398 .L0 
-     /tmp/ccem8FI4.s:640    .text:000000000000039c .L0 
-     /tmp/ccem8FI4.s:644    .text:00000000000003a8 .L0 
-     /tmp/ccem8FI4.s:645    .text:00000000000003a8 .L0 
-     /tmp/ccem8FI4.s:646    .text:00000000000003a8 .L0 
-     /tmp/ccem8FI4.s:648    .text:00000000000003ac .L0 
-     /tmp/ccem8FI4.s:651    .text:00000000000003ac .L0 
-     /tmp/ccem8FI4.s:652    .text:00000000000003ac .L0 
-GAS LISTING /tmp/ccem8FI4.s 			page 25
+     /tmp/ccwHAveC.s:528    .text:0000000000000308 .L0 
+     /tmp/ccwHAveC.s:529    .text:0000000000000308 .L0 
+     /tmp/ccwHAveC.s:531    .text:000000000000030c .L0 
+     /tmp/ccwHAveC.s:533    .text:0000000000000310 .L0 
+     /tmp/ccwHAveC.s:534    .text:0000000000000310 .L0 
+     /tmp/ccwHAveC.s:537    .text:0000000000000314 .L0 
+     /tmp/ccwHAveC.s:538    .text:0000000000000314 .L0 
+     /tmp/ccwHAveC.s:540    .text:0000000000000318 .L0 
+     /tmp/ccwHAveC.s:541    .text:0000000000000318 .L0 
+     /tmp/ccwHAveC.s:543    .text:000000000000031c .L0 
+     /tmp/ccwHAveC.s:544    .text:000000000000031c .L0 
+     /tmp/ccwHAveC.s:549    .text:0000000000000328 .L0 
+     /tmp/ccwHAveC.s:550    .text:0000000000000328 .L0 
+     /tmp/ccwHAveC.s:554    .text:0000000000000334 .L0 
+     /tmp/ccwHAveC.s:555    .text:0000000000000334 .L0 
+     /tmp/ccwHAveC.s:561    .text:0000000000000338 .L0 
+     /tmp/ccwHAveC.s:562    .text:000000000000033c .L0 
+     /tmp/ccwHAveC.s:563    .text:000000000000033c .L0 
+     /tmp/ccwHAveC.s:565    .text:0000000000000340 .L0 
+     /tmp/ccwHAveC.s:566    .text:0000000000000340 .L0 
+     /tmp/ccwHAveC.s:568    .text:0000000000000344 .L0 
+     /tmp/ccwHAveC.s:571    .text:0000000000000348 .L0 
+     /tmp/ccwHAveC.s:575    .text:000000000000034c .L0 
+     /tmp/ccwHAveC.s:580    .text:000000000000034c .L0 
+     /tmp/ccwHAveC.s:581    .text:000000000000034c .L0 
+     /tmp/ccwHAveC.s:583    .text:0000000000000350 .L0 
+     /tmp/ccwHAveC.s:587    .text:000000000000035c .L0 
+     /tmp/ccwHAveC.s:588    .text:000000000000035c .L0 
+     /tmp/ccwHAveC.s:590    .text:0000000000000364 .L0 
+     /tmp/ccwHAveC.s:591    .text:0000000000000364 .L0 
+     /tmp/ccwHAveC.s:597    .text:000000000000036c .L0 
+     /tmp/ccwHAveC.s:598    .text:000000000000036c .L0 
+     /tmp/ccwHAveC.s:600    .text:0000000000000370 .L0 
+     /tmp/ccwHAveC.s:601    .text:0000000000000370 .L0 
+     /tmp/ccwHAveC.s:603    .text:0000000000000374 .L0 
+     /tmp/ccwHAveC.s:604    .text:0000000000000374 .L0 
+     /tmp/ccwHAveC.s:606    .text:000000000000037c .L0 
+     /tmp/ccwHAveC.s:607    .text:000000000000037c .L0 
+     /tmp/ccwHAveC.s:612    .text:0000000000000388 .L0 
+     /tmp/ccwHAveC.s:613    .text:0000000000000388 .L0 
+     /tmp/ccwHAveC.s:617    .text:0000000000000390 .L0 
+     /tmp/ccwHAveC.s:618    .text:0000000000000390 .L0 
+     /tmp/ccwHAveC.s:619    .text:0000000000000390 .L0 
+     /tmp/ccwHAveC.s:620    .text:0000000000000390 .L0 
+     /tmp/ccwHAveC.s:625    .text:0000000000000390 .L0 
+     /tmp/ccwHAveC.s:628    .text:0000000000000394 .L0 
+     /tmp/ccwHAveC.s:629    .text:0000000000000398 .L0 
+     /tmp/ccwHAveC.s:635    .text:0000000000000398 _ZN15MemoryAllocator8printMemEv
+     /tmp/ccwHAveC.s:638    .text:0000000000000398 .L0 
+     /tmp/ccwHAveC.s:639    .text:0000000000000398 .L0 
+     /tmp/ccwHAveC.s:640    .text:000000000000039c .L0 
+     /tmp/ccwHAveC.s:644    .text:00000000000003a8 .L0 
+     /tmp/ccwHAveC.s:645    .text:00000000000003a8 .L0 
+     /tmp/ccwHAveC.s:646    .text:00000000000003a8 .L0 
+     /tmp/ccwHAveC.s:648    .text:00000000000003ac .L0 
+     /tmp/ccwHAveC.s:651    .text:00000000000003ac .L0 
+     /tmp/ccwHAveC.s:652    .text:00000000000003ac .L0 
+GAS LISTING /tmp/ccwHAveC.s 			page 25
 
 
-     /tmp/ccem8FI4.s:656    .text:00000000000003b4 .L0 
-     /tmp/ccem8FI4.s:658    .text:00000000000003b8 .L0 
-     /tmp/ccem8FI4.s:659    .text:00000000000003b8 .L0 
-     /tmp/ccem8FI4.s:663    .text:00000000000003c4 .L0 
-     /tmp/ccem8FI4.s:664    .text:00000000000003c4 .L0 
-     /tmp/ccem8FI4.s:668    .text:00000000000003d0 .L0 
-     /tmp/ccem8FI4.s:669    .text:00000000000003d0 .L0 
-     /tmp/ccem8FI4.s:672    .text:00000000000003d4 .L0 
-     /tmp/ccem8FI4.s:677    .text:00000000000003d8 .L0 
-     /tmp/ccem8FI4.s:678    .text:00000000000003d8 .L0 
-     /tmp/ccem8FI4.s:682    .text:00000000000003e0 .L0 
-     /tmp/ccem8FI4.s:684    .text:00000000000003e4 .L0 
-     /tmp/ccem8FI4.s:685    .text:00000000000003e4 .L0 
-     /tmp/ccem8FI4.s:689    .text:00000000000003f0 .L0 
-     /tmp/ccem8FI4.s:690    .text:00000000000003f0 .L0 
-     /tmp/ccem8FI4.s:694    .text:00000000000003fc .L0 
-     /tmp/ccem8FI4.s:695    .text:00000000000003fc .L0 
-     /tmp/ccem8FI4.s:698    .text:0000000000000400 .L0 
-     /tmp/ccem8FI4.s:702    .text:0000000000000404 .L0 
-     /tmp/ccem8FI4.s:703    .text:0000000000000408 .L0 
-     /tmp/ccem8FI4.s:705    .text:000000000000040c .L0 
-     /tmp/ccem8FI4.s:706    .text:000000000000040c .L0 
-     /tmp/ccem8FI4.s:708    .text:0000000000000410 .L0 
-     /tmp/ccem8FI4.s:711    .text:0000000000000414 .L0 
-     /tmp/ccem8FI4.s:713    .text:0000000000000418 .L0 
-     /tmp/ccem8FI4.s:725    .rodata:0000000000000000 _ZN15MemoryAllocator10DBlockSizeE
-     /tmp/ccem8FI4.s:732    .data:0000000000000000 digits
-     /tmp/ccem8FI4.s:739    .bss:0000000000000000 _ZN15MemoryAllocator11initializedE
-     /tmp/ccem8FI4.s:744    .bss:0000000000000008 _ZN15MemoryAllocator8headFreeE
-     /tmp/ccem8FI4.s:748    .bss:0000000000000010 _ZN15MemoryAllocator8headFullE
-     /tmp/ccem8FI4.s:729    .data:0000000000000000 .LANCHOR0
-     /tmp/ccem8FI4.s:736    .bss:0000000000000000 .LANCHOR1
-     /tmp/ccem8FI4.s:755    .text:0000000000000418 .L0 
-     /tmp/ccem8FI4.s:40     .text:0000000000000020 .L0 
-     /tmp/ccem8FI4.s:100    .text:0000000000000088 .L0 
-     /tmp/ccem8FI4.s:105    .text:0000000000000094 .L0 
-     /tmp/ccem8FI4.s:107    .text:00000000000000a0 .L0 
-     /tmp/ccem8FI4.s:111    .text:00000000000000ac .L0 
-     /tmp/ccem8FI4.s:162    .text:0000000000000100 .L0 
-     /tmp/ccem8FI4.s:164    .text:000000000000010c .L0 
-     /tmp/ccem8FI4.s:177    .text:0000000000000128 .L0 
-     /tmp/ccem8FI4.s:215    .text:0000000000000160 .L0 
-     /tmp/ccem8FI4.s:315    .text:00000000000001e0 .L0 
-     /tmp/ccem8FI4.s:320    .text:00000000000001ec .L0 
-     /tmp/ccem8FI4.s:336    .text:0000000000000204 .L0 
-     /tmp/ccem8FI4.s:446    .text:0000000000000294 .L0 
-     /tmp/ccem8FI4.s:509    .text:00000000000002e8 .L0 
-     /tmp/ccem8FI4.s:583    .text:0000000000000350 .L0 
-     /tmp/ccem8FI4.s:588    .text:000000000000035c .L0 
-     /tmp/ccem8FI4.s:604    .text:0000000000000374 .L0 
-     /tmp/ccem8FI4.s:652    .text:00000000000003ac .L0 
-     /tmp/ccem8FI4.s:678    .text:00000000000003d8 .L0 
-     /tmp/ccem8FI4.s:32     .text:0000000000000018 .L2
-     /tmp/ccem8FI4.s:70     .text:0000000000000068 .L1
-     /tmp/ccem8FI4.s:55     .text:0000000000000048 .L4
-     /tmp/ccem8FI4.s:133    .text:00000000000000e0 .L6
-     /tmp/ccem8FI4.s:343    .text:0000000000000214 .L22
-GAS LISTING /tmp/ccem8FI4.s 			page 26
+     /tmp/ccwHAveC.s:656    .text:00000000000003b4 .L0 
+     /tmp/ccwHAveC.s:658    .text:00000000000003b8 .L0 
+     /tmp/ccwHAveC.s:659    .text:00000000000003b8 .L0 
+     /tmp/ccwHAveC.s:663    .text:00000000000003c4 .L0 
+     /tmp/ccwHAveC.s:664    .text:00000000000003c4 .L0 
+     /tmp/ccwHAveC.s:668    .text:00000000000003d0 .L0 
+     /tmp/ccwHAveC.s:669    .text:00000000000003d0 .L0 
+     /tmp/ccwHAveC.s:672    .text:00000000000003d4 .L0 
+     /tmp/ccwHAveC.s:677    .text:00000000000003d8 .L0 
+     /tmp/ccwHAveC.s:678    .text:00000000000003d8 .L0 
+     /tmp/ccwHAveC.s:682    .text:00000000000003e0 .L0 
+     /tmp/ccwHAveC.s:684    .text:00000000000003e4 .L0 
+     /tmp/ccwHAveC.s:685    .text:00000000000003e4 .L0 
+     /tmp/ccwHAveC.s:689    .text:00000000000003f0 .L0 
+     /tmp/ccwHAveC.s:690    .text:00000000000003f0 .L0 
+     /tmp/ccwHAveC.s:694    .text:00000000000003fc .L0 
+     /tmp/ccwHAveC.s:695    .text:00000000000003fc .L0 
+     /tmp/ccwHAveC.s:698    .text:0000000000000400 .L0 
+     /tmp/ccwHAveC.s:702    .text:0000000000000404 .L0 
+     /tmp/ccwHAveC.s:703    .text:0000000000000408 .L0 
+     /tmp/ccwHAveC.s:705    .text:000000000000040c .L0 
+     /tmp/ccwHAveC.s:706    .text:000000000000040c .L0 
+     /tmp/ccwHAveC.s:708    .text:0000000000000410 .L0 
+     /tmp/ccwHAveC.s:711    .text:0000000000000414 .L0 
+     /tmp/ccwHAveC.s:713    .text:0000000000000418 .L0 
+     /tmp/ccwHAveC.s:725    .rodata:0000000000000000 _ZN15MemoryAllocator10DBlockSizeE
+     /tmp/ccwHAveC.s:732    .data:0000000000000000 digits
+     /tmp/ccwHAveC.s:739    .bss:0000000000000000 _ZN15MemoryAllocator11initializedE
+     /tmp/ccwHAveC.s:744    .bss:0000000000000008 _ZN15MemoryAllocator8headFreeE
+     /tmp/ccwHAveC.s:748    .bss:0000000000000010 _ZN15MemoryAllocator8headFullE
+     /tmp/ccwHAveC.s:729    .data:0000000000000000 .LANCHOR0
+     /tmp/ccwHAveC.s:736    .bss:0000000000000000 .LANCHOR1
+     /tmp/ccwHAveC.s:755    .text:0000000000000418 .L0 
+     /tmp/ccwHAveC.s:40     .text:0000000000000020 .L0 
+     /tmp/ccwHAveC.s:100    .text:0000000000000088 .L0 
+     /tmp/ccwHAveC.s:105    .text:0000000000000094 .L0 
+     /tmp/ccwHAveC.s:107    .text:00000000000000a0 .L0 
+     /tmp/ccwHAveC.s:111    .text:00000000000000ac .L0 
+     /tmp/ccwHAveC.s:162    .text:0000000000000100 .L0 
+     /tmp/ccwHAveC.s:164    .text:000000000000010c .L0 
+     /tmp/ccwHAveC.s:177    .text:0000000000000128 .L0 
+     /tmp/ccwHAveC.s:215    .text:0000000000000160 .L0 
+     /tmp/ccwHAveC.s:315    .text:00000000000001e0 .L0 
+     /tmp/ccwHAveC.s:320    .text:00000000000001ec .L0 
+     /tmp/ccwHAveC.s:336    .text:0000000000000204 .L0 
+     /tmp/ccwHAveC.s:446    .text:0000000000000294 .L0 
+     /tmp/ccwHAveC.s:509    .text:00000000000002e8 .L0 
+     /tmp/ccwHAveC.s:583    .text:0000000000000350 .L0 
+     /tmp/ccwHAveC.s:588    .text:000000000000035c .L0 
+     /tmp/ccwHAveC.s:604    .text:0000000000000374 .L0 
+     /tmp/ccwHAveC.s:652    .text:00000000000003ac .L0 
+     /tmp/ccwHAveC.s:678    .text:00000000000003d8 .L0 
+     /tmp/ccwHAveC.s:32     .text:0000000000000018 .L2
+     /tmp/ccwHAveC.s:70     .text:0000000000000068 .L1
+     /tmp/ccwHAveC.s:55     .text:0000000000000048 .L4
+     /tmp/ccwHAveC.s:133    .text:00000000000000e0 .L6
+     /tmp/ccwHAveC.s:343    .text:0000000000000214 .L22
+GAS LISTING /tmp/ccwHAveC.s 			page 26
 
 
-     /tmp/ccem8FI4.s:351    .text:000000000000021c .L23
-     /tmp/ccem8FI4.s:252    .text:0000000000000198 .L9
-     /tmp/ccem8FI4.s:264    .text:00000000000001a4 .L25
-     /tmp/ccem8FI4.s:276    .text:00000000000001ac .L26
-     /tmp/ccem8FI4.s:317    .text:00000000000001ec .L27
-     /tmp/ccem8FI4.s:327    .text:00000000000001fc .L28
-     /tmp/ccem8FI4.s:232    .text:0000000000000180 .L20
-     /tmp/ccem8FI4.s:220    .text:0000000000000170 .L19
-     /tmp/ccem8FI4.s:241    .text:000000000000018c .L21
-     /tmp/ccem8FI4.s:181    .text:0000000000000134 .L12
-     /tmp/ccem8FI4.s:289    .text:00000000000001bc .L14
-     /tmp/ccem8FI4.s:300    .text:00000000000001cc .L15
-     /tmp/ccem8FI4.s:310    .text:00000000000001dc .L29
-     /tmp/ccem8FI4.s:212    .text:0000000000000160 .L17
-     /tmp/ccem8FI4.s:303    .text:00000000000001d0 .L16
-     /tmp/ccem8FI4.s:387    .text:000000000000024c .L30
-     /tmp/ccem8FI4.s:396    .text:0000000000000258 .L33
-     /tmp/ccem8FI4.s:616    .text:0000000000000390 .L46
-     /tmp/ccem8FI4.s:462    .text:00000000000002ac .L45
-     /tmp/ccem8FI4.s:473    .text:00000000000002bc .L52
-     /tmp/ccem8FI4.s:451    .text:00000000000002a4 .L36
-     /tmp/ccem8FI4.s:556    .text:0000000000000338 .L35
-     /tmp/ccem8FI4.s:487    .text:00000000000002cc .L38
-     /tmp/ccem8FI4.s:498    .text:00000000000002dc .L39
-     /tmp/ccem8FI4.s:574    .text:000000000000034c .L53
-     /tmp/ccem8FI4.s:585    .text:000000000000035c .L54
-     /tmp/ccem8FI4.s:595    .text:000000000000036c .L55
-     /tmp/ccem8FI4.s:526    .text:0000000000000308 .L43
-     /tmp/ccem8FI4.s:514    .text:00000000000002f8 .L42
-     /tmp/ccem8FI4.s:535    .text:0000000000000314 .L44
-     /tmp/ccem8FI4.s:501    .text:00000000000002e0 .L40
-     /tmp/ccem8FI4.s:673    .text:00000000000003d8 .L57
-     /tmp/ccem8FI4.s:654    .text:00000000000003b4 .L58
-     /tmp/ccem8FI4.s:699    .text:0000000000000404 .L56
-     /tmp/ccem8FI4.s:680    .text:00000000000003e0 .L60
-     /tmp/ccem8FI4.s:1375   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/ccem8FI4.s:2451   .debug_str:0000000000000200 .LASF46
-     /tmp/ccem8FI4.s:2449   .debug_str:00000000000001e8 .LASF47
-     /tmp/ccem8FI4.s:2479   .debug_str:0000000000000399 .LASF48
-     /tmp/ccem8FI4.s:5      .text:0000000000000000 .Ltext0
-     /tmp/ccem8FI4.s:751    .text:0000000000000418 .Letext0
-     /tmp/ccem8FI4.s:2389   .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/ccem8FI4.s:2457   .debug_str:00000000000002d8 .LASF0
-     /tmp/ccem8FI4.s:2437   .debug_str:000000000000017c .LASF1
-     /tmp/ccem8FI4.s:2429   .debug_str:0000000000000134 .LASF2
-     /tmp/ccem8FI4.s:2405   .debug_str:000000000000004c .LASF4
-     /tmp/ccem8FI4.s:2435   .debug_str:000000000000016a .LASF3
-     /tmp/ccem8FI4.s:2395   .debug_str:0000000000000023 .LASF5
-     /tmp/ccem8FI4.s:2391   .debug_str:0000000000000000 .LASF6
-     /tmp/ccem8FI4.s:2421   .debug_str:00000000000000e8 .LASF7
-     /tmp/ccem8FI4.s:2467   .debug_str:000000000000031f .LASF8
-     /tmp/ccem8FI4.s:2403   .debug_str:000000000000003e .LASF9
-     /tmp/ccem8FI4.s:2501   .debug_str:000000000000043f .LASF10
-     /tmp/ccem8FI4.s:2425   .debug_str:0000000000000104 .LASF11
-     /tmp/ccem8FI4.s:2489   .debug_str:00000000000003f2 .LASF12
-     /tmp/ccem8FI4.s:2473   .debug_str:0000000000000361 .LASF13
-     /tmp/ccem8FI4.s:2439   .debug_str:000000000000018f .LASF14
-GAS LISTING /tmp/ccem8FI4.s 			page 27
+     /tmp/ccwHAveC.s:351    .text:000000000000021c .L23
+     /tmp/ccwHAveC.s:252    .text:0000000000000198 .L9
+     /tmp/ccwHAveC.s:264    .text:00000000000001a4 .L25
+     /tmp/ccwHAveC.s:276    .text:00000000000001ac .L26
+     /tmp/ccwHAveC.s:317    .text:00000000000001ec .L27
+     /tmp/ccwHAveC.s:327    .text:00000000000001fc .L28
+     /tmp/ccwHAveC.s:232    .text:0000000000000180 .L20
+     /tmp/ccwHAveC.s:220    .text:0000000000000170 .L19
+     /tmp/ccwHAveC.s:241    .text:000000000000018c .L21
+     /tmp/ccwHAveC.s:181    .text:0000000000000134 .L12
+     /tmp/ccwHAveC.s:289    .text:00000000000001bc .L14
+     /tmp/ccwHAveC.s:300    .text:00000000000001cc .L15
+     /tmp/ccwHAveC.s:310    .text:00000000000001dc .L29
+     /tmp/ccwHAveC.s:212    .text:0000000000000160 .L17
+     /tmp/ccwHAveC.s:303    .text:00000000000001d0 .L16
+     /tmp/ccwHAveC.s:387    .text:000000000000024c .L30
+     /tmp/ccwHAveC.s:396    .text:0000000000000258 .L33
+     /tmp/ccwHAveC.s:616    .text:0000000000000390 .L46
+     /tmp/ccwHAveC.s:462    .text:00000000000002ac .L45
+     /tmp/ccwHAveC.s:473    .text:00000000000002bc .L52
+     /tmp/ccwHAveC.s:451    .text:00000000000002a4 .L36
+     /tmp/ccwHAveC.s:556    .text:0000000000000338 .L35
+     /tmp/ccwHAveC.s:487    .text:00000000000002cc .L38
+     /tmp/ccwHAveC.s:498    .text:00000000000002dc .L39
+     /tmp/ccwHAveC.s:574    .text:000000000000034c .L53
+     /tmp/ccwHAveC.s:585    .text:000000000000035c .L54
+     /tmp/ccwHAveC.s:595    .text:000000000000036c .L55
+     /tmp/ccwHAveC.s:526    .text:0000000000000308 .L43
+     /tmp/ccwHAveC.s:514    .text:00000000000002f8 .L42
+     /tmp/ccwHAveC.s:535    .text:0000000000000314 .L44
+     /tmp/ccwHAveC.s:501    .text:00000000000002e0 .L40
+     /tmp/ccwHAveC.s:673    .text:00000000000003d8 .L57
+     /tmp/ccwHAveC.s:654    .text:00000000000003b4 .L58
+     /tmp/ccwHAveC.s:699    .text:0000000000000404 .L56
+     /tmp/ccwHAveC.s:680    .text:00000000000003e0 .L60
+     /tmp/ccwHAveC.s:1375   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccwHAveC.s:2451   .debug_str:0000000000000200 .LASF46
+     /tmp/ccwHAveC.s:2449   .debug_str:00000000000001e8 .LASF47
+     /tmp/ccwHAveC.s:2479   .debug_str:0000000000000399 .LASF48
+     /tmp/ccwHAveC.s:5      .text:0000000000000000 .Ltext0
+     /tmp/ccwHAveC.s:751    .text:0000000000000418 .Letext0
+     /tmp/ccwHAveC.s:2389   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccwHAveC.s:2457   .debug_str:00000000000002d8 .LASF0
+     /tmp/ccwHAveC.s:2437   .debug_str:000000000000017c .LASF1
+     /tmp/ccwHAveC.s:2429   .debug_str:0000000000000134 .LASF2
+     /tmp/ccwHAveC.s:2405   .debug_str:000000000000004c .LASF4
+     /tmp/ccwHAveC.s:2435   .debug_str:000000000000016a .LASF3
+     /tmp/ccwHAveC.s:2395   .debug_str:0000000000000023 .LASF5
+     /tmp/ccwHAveC.s:2391   .debug_str:0000000000000000 .LASF6
+     /tmp/ccwHAveC.s:2421   .debug_str:00000000000000e8 .LASF7
+     /tmp/ccwHAveC.s:2467   .debug_str:000000000000031f .LASF8
+     /tmp/ccwHAveC.s:2403   .debug_str:000000000000003e .LASF9
+     /tmp/ccwHAveC.s:2501   .debug_str:000000000000043f .LASF10
+     /tmp/ccwHAveC.s:2425   .debug_str:0000000000000104 .LASF11
+     /tmp/ccwHAveC.s:2489   .debug_str:00000000000003f2 .LASF12
+     /tmp/ccwHAveC.s:2473   .debug_str:0000000000000361 .LASF13
+     /tmp/ccwHAveC.s:2439   .debug_str:000000000000018f .LASF14
+GAS LISTING /tmp/ccwHAveC.s 			page 27
 
 
-     /tmp/ccem8FI4.s:2417   .debug_str:00000000000000c9 .LASF15
-     /tmp/ccem8FI4.s:2469   .debug_str:000000000000032f .LASF16
-     /tmp/ccem8FI4.s:2393   .debug_str:0000000000000013 .LASF28
-     /tmp/ccem8FI4.s:2453   .debug_str:00000000000002c4 .LASF49
-     /tmp/ccem8FI4.s:2495   .debug_str:0000000000000416 .LASF17
-     /tmp/ccem8FI4.s:2397   .debug_str:000000000000002a .LASF18
-     /tmp/ccem8FI4.s:2499   .debug_str:000000000000043a .LASF19
-     /tmp/ccem8FI4.s:2415   .debug_str:00000000000000c4 .LASF24
-     /tmp/ccem8FI4.s:2471   .debug_str:0000000000000345 .LASF26
-     /tmp/ccem8FI4.s:2493   .debug_str:000000000000040c .LASF20
-     /tmp/ccem8FI4.s:2485   .debug_str:00000000000003c8 .LASF22
-     /tmp/ccem8FI4.s:2475   .debug_str:0000000000000371 .LASF21
-     /tmp/ccem8FI4.s:2427   .debug_str:0000000000000113 .LASF23
-     /tmp/ccem8FI4.s:2411   .debug_str:000000000000009f .LASF44
-     /tmp/ccem8FI4.s:2491   .debug_str:0000000000000402 .LASF50
-     /tmp/ccem8FI4.s:2431   .debug_str:0000000000000142 .LASF51
-     /tmp/ccem8FI4.s:2487   .debug_str:00000000000003e9 .LASF25
-     /tmp/ccem8FI4.s:2407   .debug_str:0000000000000053 .LASF27
-     /tmp/ccem8FI4.s:2461   .debug_str:00000000000002ea .LASF52
-     /tmp/ccem8FI4.s:2447   .debug_str:00000000000001cf .LASF29
-     /tmp/ccem8FI4.s:2423   .debug_str:00000000000000fb .LASF30
-     /tmp/ccem8FI4.s:2419   .debug_str:00000000000000df .LASF31
-     /tmp/ccem8FI4.s:2433   .debug_str:000000000000015e .LASF32
-     /tmp/ccem8FI4.s:2399   .debug_str:000000000000002f .LASF53
-     /tmp/ccem8FI4.s:2409   .debug_str:0000000000000073 .LASF54
-     /tmp/ccem8FI4.s:2481   .debug_str:00000000000003bc .LASF33
-     /tmp/ccem8FI4.s:2477   .debug_str:000000000000037a .LASF34
-     /tmp/ccem8FI4.s:2497   .debug_str:000000000000041b .LASF35
-     /tmp/ccem8FI4.s:2465   .debug_str:00000000000002fc .LASF36
-     /tmp/ccem8FI4.s:2459   .debug_str:00000000000002e5 .LASF37
-     /tmp/ccem8FI4.s:2483   .debug_str:00000000000003c1 .LASF38
-     /tmp/ccem8FI4.s:2445   .debug_str:00000000000001ad .LASF39
-     /tmp/ccem8FI4.s:636    .text:0000000000000398 .LFB5
-     /tmp/ccem8FI4.s:714    .text:0000000000000418 .LFE5
-     /tmp/ccem8FI4.s:650    .text:00000000000003ac .LBB16
-     /tmp/ccem8FI4.s:674    .text:00000000000003d8 .LBE16
-     /tmp/ccem8FI4.s:2114   .debug_loc:0000000000000000 .LLST8
-     /tmp/ccem8FI4.s:661    .text:00000000000003c4 .LVL50
-     /tmp/ccem8FI4.s:666    .text:00000000000003d0 .LVL51
-     /tmp/ccem8FI4.s:676    .text:00000000000003d8 .LBB17
-     /tmp/ccem8FI4.s:700    .text:0000000000000404 .LBE17
-     /tmp/ccem8FI4.s:2121   .debug_loc:0000000000000023 .LLST9
-     /tmp/ccem8FI4.s:687    .text:00000000000003f0 .LVL54
-     /tmp/ccem8FI4.s:692    .text:00000000000003fc .LVL55
-     /tmp/ccem8FI4.s:362    .text:0000000000000224 .LFB4
-     /tmp/ccem8FI4.s:416    .text:0000000000000278 .LFE4
-     /tmp/ccem8FI4.s:2401   .debug_str:0000000000000039 .LASF40
-     /tmp/ccem8FI4.s:422    .text:0000000000000278 .LFB3
-     /tmp/ccem8FI4.s:630    .text:0000000000000398 .LFE3
-     /tmp/ccem8FI4.s:2128   .debug_loc:0000000000000046 .LLST5
-     /tmp/ccem8FI4.s:2363   .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/ccem8FI4.s:2198   .debug_loc:000000000000013e .LLST6
-     /tmp/ccem8FI4.s:2443   .debug_str:00000000000001a4 .LASF41
-     /tmp/ccem8FI4.s:2213   .debug_loc:0000000000000187 .LLST7
-     /tmp/ccem8FI4.s:547    .text:0000000000000328 .LVL39
-     /tmp/ccem8FI4.s:552    .text:0000000000000334 .LVL40
-     /tmp/ccem8FI4.s:610    .text:0000000000000388 .LVL46
-GAS LISTING /tmp/ccem8FI4.s 			page 28
+     /tmp/ccwHAveC.s:2417   .debug_str:00000000000000c9 .LASF15
+     /tmp/ccwHAveC.s:2469   .debug_str:000000000000032f .LASF16
+     /tmp/ccwHAveC.s:2393   .debug_str:0000000000000013 .LASF28
+     /tmp/ccwHAveC.s:2453   .debug_str:00000000000002c4 .LASF49
+     /tmp/ccwHAveC.s:2495   .debug_str:0000000000000416 .LASF17
+     /tmp/ccwHAveC.s:2397   .debug_str:000000000000002a .LASF18
+     /tmp/ccwHAveC.s:2499   .debug_str:000000000000043a .LASF19
+     /tmp/ccwHAveC.s:2415   .debug_str:00000000000000c4 .LASF24
+     /tmp/ccwHAveC.s:2471   .debug_str:0000000000000345 .LASF26
+     /tmp/ccwHAveC.s:2493   .debug_str:000000000000040c .LASF20
+     /tmp/ccwHAveC.s:2485   .debug_str:00000000000003c8 .LASF22
+     /tmp/ccwHAveC.s:2475   .debug_str:0000000000000371 .LASF21
+     /tmp/ccwHAveC.s:2427   .debug_str:0000000000000113 .LASF23
+     /tmp/ccwHAveC.s:2411   .debug_str:000000000000009f .LASF44
+     /tmp/ccwHAveC.s:2491   .debug_str:0000000000000402 .LASF50
+     /tmp/ccwHAveC.s:2431   .debug_str:0000000000000142 .LASF51
+     /tmp/ccwHAveC.s:2487   .debug_str:00000000000003e9 .LASF25
+     /tmp/ccwHAveC.s:2407   .debug_str:0000000000000053 .LASF27
+     /tmp/ccwHAveC.s:2461   .debug_str:00000000000002ea .LASF52
+     /tmp/ccwHAveC.s:2447   .debug_str:00000000000001cf .LASF29
+     /tmp/ccwHAveC.s:2423   .debug_str:00000000000000fb .LASF30
+     /tmp/ccwHAveC.s:2419   .debug_str:00000000000000df .LASF31
+     /tmp/ccwHAveC.s:2433   .debug_str:000000000000015e .LASF32
+     /tmp/ccwHAveC.s:2399   .debug_str:000000000000002f .LASF53
+     /tmp/ccwHAveC.s:2409   .debug_str:0000000000000073 .LASF54
+     /tmp/ccwHAveC.s:2481   .debug_str:00000000000003bc .LASF33
+     /tmp/ccwHAveC.s:2477   .debug_str:000000000000037a .LASF34
+     /tmp/ccwHAveC.s:2497   .debug_str:000000000000041b .LASF35
+     /tmp/ccwHAveC.s:2465   .debug_str:00000000000002fc .LASF36
+     /tmp/ccwHAveC.s:2459   .debug_str:00000000000002e5 .LASF37
+     /tmp/ccwHAveC.s:2483   .debug_str:00000000000003c1 .LASF38
+     /tmp/ccwHAveC.s:2445   .debug_str:00000000000001ad .LASF39
+     /tmp/ccwHAveC.s:636    .text:0000000000000398 .LFB5
+     /tmp/ccwHAveC.s:714    .text:0000000000000418 .LFE5
+     /tmp/ccwHAveC.s:650    .text:00000000000003ac .LBB16
+     /tmp/ccwHAveC.s:674    .text:00000000000003d8 .LBE16
+     /tmp/ccwHAveC.s:2114   .debug_loc:0000000000000000 .LLST8
+     /tmp/ccwHAveC.s:661    .text:00000000000003c4 .LVL50
+     /tmp/ccwHAveC.s:666    .text:00000000000003d0 .LVL51
+     /tmp/ccwHAveC.s:676    .text:00000000000003d8 .LBB17
+     /tmp/ccwHAveC.s:700    .text:0000000000000404 .LBE17
+     /tmp/ccwHAveC.s:2121   .debug_loc:0000000000000023 .LLST9
+     /tmp/ccwHAveC.s:687    .text:00000000000003f0 .LVL54
+     /tmp/ccwHAveC.s:692    .text:00000000000003fc .LVL55
+     /tmp/ccwHAveC.s:362    .text:0000000000000224 .LFB4
+     /tmp/ccwHAveC.s:416    .text:0000000000000278 .LFE4
+     /tmp/ccwHAveC.s:2401   .debug_str:0000000000000039 .LASF40
+     /tmp/ccwHAveC.s:422    .text:0000000000000278 .LFB3
+     /tmp/ccwHAveC.s:630    .text:0000000000000398 .LFE3
+     /tmp/ccwHAveC.s:2128   .debug_loc:0000000000000046 .LLST5
+     /tmp/ccwHAveC.s:2363   .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccwHAveC.s:2198   .debug_loc:000000000000013e .LLST6
+     /tmp/ccwHAveC.s:2443   .debug_str:00000000000001a4 .LASF41
+     /tmp/ccwHAveC.s:2213   .debug_loc:0000000000000187 .LLST7
+     /tmp/ccwHAveC.s:547    .text:0000000000000328 .LVL39
+     /tmp/ccwHAveC.s:552    .text:0000000000000334 .LVL40
+     /tmp/ccwHAveC.s:610    .text:0000000000000388 .LVL46
+GAS LISTING /tmp/ccwHAveC.s 			page 28
 
 
-     /tmp/ccem8FI4.s:148    .text:00000000000000ec .LFB2
-     /tmp/ccem8FI4.s:356    .text:0000000000000224 .LFE2
-     /tmp/ccem8FI4.s:2224   .debug_loc:00000000000001bd .LLST2
-     /tmp/ccem8FI4.s:2272   .debug_loc:0000000000000281 .LLST3
-     /tmp/ccem8FI4.s:2441   .debug_str:000000000000019b .LASF42
-     /tmp/ccem8FI4.s:2306   .debug_loc:0000000000000327 .LLST4
-     /tmp/ccem8FI4.s:89     .text:000000000000007c .LFB1
-     /tmp/ccem8FI4.s:142    .text:00000000000000ec .LFE1
-     /tmp/ccem8FI4.s:2413   .debug_str:00000000000000bb .LASF43
-     /tmp/ccem8FI4.s:2455   .debug_str:00000000000002cb .LASF45
-     /tmp/ccem8FI4.s:10     .text:0000000000000000 .LFB0
-     /tmp/ccem8FI4.s:83     .text:000000000000007c .LFE0
-     /tmp/ccem8FI4.s:2317   .debug_loc:000000000000035d .LLST0
-     /tmp/ccem8FI4.s:2328   .debug_loc:0000000000000393 .LLST1
-     /tmp/ccem8FI4.s:68     .text:0000000000000064 .LVL8
-     /tmp/ccem8FI4.s:2463   .debug_str:00000000000002f5 .LASF55
-     /tmp/ccem8FI4.s:653    .text:00000000000003b4 .LVL49
-     /tmp/ccem8FI4.s:679    .text:00000000000003e0 .LVL53
-     /tmp/ccem8FI4.s:709    .text:0000000000000410 .LVL57
-     /tmp/ccem8FI4.s:425    .text:0000000000000278 .LVL29
-     /tmp/ccem8FI4.s:442    .text:0000000000000294 .LVL30
-     /tmp/ccem8FI4.s:470    .text:00000000000002b8 .LVL34
-     /tmp/ccem8FI4.s:472    .text:00000000000002bc .LVL35
-     /tmp/ccem8FI4.s:545    .text:0000000000000320 .LVL38
-     /tmp/ccem8FI4.s:573    .text:000000000000034c .LVL42
-     /tmp/ccem8FI4.s:592    .text:0000000000000368 .LVL43
-     /tmp/ccem8FI4.s:594    .text:000000000000036c .LVL44
-     /tmp/ccem8FI4.s:608    .text:0000000000000380 .LVL45
-     /tmp/ccem8FI4.s:615    .text:0000000000000390 .LVL47
-     /tmp/ccem8FI4.s:626    .text:0000000000000394 .LVL48
-     /tmp/ccem8FI4.s:447    .text:000000000000029c .LVL31
-     /tmp/ccem8FI4.s:450    .text:00000000000002a4 .LVL32
-     /tmp/ccem8FI4.s:569    .text:0000000000000344 .LVL41
-     /tmp/ccem8FI4.s:515    .text:00000000000002f8 .LVL36
-     /tmp/ccem8FI4.s:521    .text:0000000000000300 .LVL37
-     /tmp/ccem8FI4.s:151    .text:00000000000000ec .LVL9
-     /tmp/ccem8FI4.s:180    .text:0000000000000134 .LVL12
-     /tmp/ccem8FI4.s:211    .text:0000000000000160 .LVL14
-     /tmp/ccem8FI4.s:263    .text:00000000000001a4 .LVL18
-     /tmp/ccem8FI4.s:281    .text:00000000000001b0 .LVL20
-     /tmp/ccem8FI4.s:342    .text:0000000000000214 .LVL24
-     /tmp/ccem8FI4.s:348    .text:0000000000000218 .LVL25
-     /tmp/ccem8FI4.s:350    .text:000000000000021c .LVL26
-     /tmp/ccem8FI4.s:353    .text:0000000000000220 .LVL27
-     /tmp/ccem8FI4.s:173    .text:0000000000000128 .LVL10
-     /tmp/ccem8FI4.s:178    .text:0000000000000130 .LVL11
-     /tmp/ccem8FI4.s:251    .text:0000000000000198 .LVL17
-     /tmp/ccem8FI4.s:324    .text:00000000000001f8 .LVL21
-     /tmp/ccem8FI4.s:326    .text:00000000000001fc .LVL22
-     /tmp/ccem8FI4.s:340    .text:0000000000000210 .LVL23
-     /tmp/ccem8FI4.s:221    .text:0000000000000170 .LVL15
-     /tmp/ccem8FI4.s:227    .text:0000000000000178 .LVL16
-     /tmp/ccem8FI4.s:14     .text:0000000000000000 .LVL0
-     /tmp/ccem8FI4.s:31     .text:0000000000000018 .LVL2
-     /tmp/ccem8FI4.s:52     .text:0000000000000044 .LVL5
-     /tmp/ccem8FI4.s:28     .text:0000000000000014 .LVL1
-     /tmp/ccem8FI4.s:38     .text:0000000000000020 .LVL3
-GAS LISTING /tmp/ccem8FI4.s 			page 29
+     /tmp/ccwHAveC.s:148    .text:00000000000000ec .LFB2
+     /tmp/ccwHAveC.s:356    .text:0000000000000224 .LFE2
+     /tmp/ccwHAveC.s:2224   .debug_loc:00000000000001bd .LLST2
+     /tmp/ccwHAveC.s:2272   .debug_loc:0000000000000281 .LLST3
+     /tmp/ccwHAveC.s:2441   .debug_str:000000000000019b .LASF42
+     /tmp/ccwHAveC.s:2306   .debug_loc:0000000000000327 .LLST4
+     /tmp/ccwHAveC.s:89     .text:000000000000007c .LFB1
+     /tmp/ccwHAveC.s:142    .text:00000000000000ec .LFE1
+     /tmp/ccwHAveC.s:2413   .debug_str:00000000000000bb .LASF43
+     /tmp/ccwHAveC.s:2455   .debug_str:00000000000002cb .LASF45
+     /tmp/ccwHAveC.s:10     .text:0000000000000000 .LFB0
+     /tmp/ccwHAveC.s:83     .text:000000000000007c .LFE0
+     /tmp/ccwHAveC.s:2317   .debug_loc:000000000000035d .LLST0
+     /tmp/ccwHAveC.s:2328   .debug_loc:0000000000000393 .LLST1
+     /tmp/ccwHAveC.s:68     .text:0000000000000064 .LVL8
+     /tmp/ccwHAveC.s:2463   .debug_str:00000000000002f5 .LASF55
+     /tmp/ccwHAveC.s:653    .text:00000000000003b4 .LVL49
+     /tmp/ccwHAveC.s:679    .text:00000000000003e0 .LVL53
+     /tmp/ccwHAveC.s:709    .text:0000000000000410 .LVL57
+     /tmp/ccwHAveC.s:425    .text:0000000000000278 .LVL29
+     /tmp/ccwHAveC.s:442    .text:0000000000000294 .LVL30
+     /tmp/ccwHAveC.s:470    .text:00000000000002b8 .LVL34
+     /tmp/ccwHAveC.s:472    .text:00000000000002bc .LVL35
+     /tmp/ccwHAveC.s:545    .text:0000000000000320 .LVL38
+     /tmp/ccwHAveC.s:573    .text:000000000000034c .LVL42
+     /tmp/ccwHAveC.s:592    .text:0000000000000368 .LVL43
+     /tmp/ccwHAveC.s:594    .text:000000000000036c .LVL44
+     /tmp/ccwHAveC.s:608    .text:0000000000000380 .LVL45
+     /tmp/ccwHAveC.s:615    .text:0000000000000390 .LVL47
+     /tmp/ccwHAveC.s:626    .text:0000000000000394 .LVL48
+     /tmp/ccwHAveC.s:447    .text:000000000000029c .LVL31
+     /tmp/ccwHAveC.s:450    .text:00000000000002a4 .LVL32
+     /tmp/ccwHAveC.s:569    .text:0000000000000344 .LVL41
+     /tmp/ccwHAveC.s:515    .text:00000000000002f8 .LVL36
+     /tmp/ccwHAveC.s:521    .text:0000000000000300 .LVL37
+     /tmp/ccwHAveC.s:151    .text:00000000000000ec .LVL9
+     /tmp/ccwHAveC.s:180    .text:0000000000000134 .LVL12
+     /tmp/ccwHAveC.s:211    .text:0000000000000160 .LVL14
+     /tmp/ccwHAveC.s:263    .text:00000000000001a4 .LVL18
+     /tmp/ccwHAveC.s:281    .text:00000000000001b0 .LVL20
+     /tmp/ccwHAveC.s:342    .text:0000000000000214 .LVL24
+     /tmp/ccwHAveC.s:348    .text:0000000000000218 .LVL25
+     /tmp/ccwHAveC.s:350    .text:000000000000021c .LVL26
+     /tmp/ccwHAveC.s:353    .text:0000000000000220 .LVL27
+     /tmp/ccwHAveC.s:173    .text:0000000000000128 .LVL10
+     /tmp/ccwHAveC.s:178    .text:0000000000000130 .LVL11
+     /tmp/ccwHAveC.s:251    .text:0000000000000198 .LVL17
+     /tmp/ccwHAveC.s:324    .text:00000000000001f8 .LVL21
+     /tmp/ccwHAveC.s:326    .text:00000000000001fc .LVL22
+     /tmp/ccwHAveC.s:340    .text:0000000000000210 .LVL23
+     /tmp/ccwHAveC.s:221    .text:0000000000000170 .LVL15
+     /tmp/ccwHAveC.s:227    .text:0000000000000178 .LVL16
+     /tmp/ccwHAveC.s:14     .text:0000000000000000 .LVL0
+     /tmp/ccwHAveC.s:31     .text:0000000000000018 .LVL2
+     /tmp/ccwHAveC.s:52     .text:0000000000000044 .LVL5
+     /tmp/ccwHAveC.s:28     .text:0000000000000014 .LVL1
+     /tmp/ccwHAveC.s:38     .text:0000000000000020 .LVL3
+GAS LISTING /tmp/ccwHAveC.s 			page 29
 
 
-     /tmp/ccem8FI4.s:47     .text:000000000000003c .LVL4
-     /tmp/ccem8FI4.s:56     .text:0000000000000048 .LVL6
-     /tmp/ccem8FI4.s:60     .text:000000000000004c .LVL7
-     /tmp/ccem8FI4.s:756    .debug_info:0000000000000000 .Ldebug_info0
-     /tmp/ccem8FI4.s:184    .text:0000000000000138 .LBB3
-     /tmp/ccem8FI4.s:253    .text:0000000000000198 .LBE3
-     /tmp/ccem8FI4.s:267    .text:00000000000001a4 .LBB4
-     /tmp/ccem8FI4.s:269    .text:00000000000001a4 .LBE4
-     /tmp/ccem8FI4.s:277    .text:00000000000001ac .LBB5
-     /tmp/ccem8FI4.s:344    .text:0000000000000214 .LBE5
-     /tmp/ccem8FI4.s:444    .text:0000000000000294 .LBB7
-     /tmp/ccem8FI4.s:452    .text:00000000000002a4 .LBE7
-     /tmp/ccem8FI4.s:454    .text:00000000000002a4 .LBB13
-     /tmp/ccem8FI4.s:467    .text:00000000000002b4 .LBE13
-     /tmp/ccem8FI4.s:474    .text:00000000000002bc .LBB14
-     /tmp/ccem8FI4.s:559    .text:0000000000000338 .LBE14
-     /tmp/ccem8FI4.s:576    .text:000000000000034c .LBB15
-     /tmp/ccem8FI4.s:623    .text:0000000000000390 .LBE15
-     /tmp/ccem8FI4.s:476    .text:00000000000002bc .LBB9
-     /tmp/ccem8FI4.s:557    .text:0000000000000338 .LBE9
-     /tmp/ccem8FI4.s:578    .text:000000000000034c .LBB10
-     /tmp/ccem8FI4.s:621    .text:0000000000000390 .LBE10
+     /tmp/ccwHAveC.s:47     .text:000000000000003c .LVL4
+     /tmp/ccwHAveC.s:56     .text:0000000000000048 .LVL6
+     /tmp/ccwHAveC.s:60     .text:000000000000004c .LVL7
+     /tmp/ccwHAveC.s:756    .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccwHAveC.s:184    .text:0000000000000138 .LBB3
+     /tmp/ccwHAveC.s:253    .text:0000000000000198 .LBE3
+     /tmp/ccwHAveC.s:267    .text:00000000000001a4 .LBB4
+     /tmp/ccwHAveC.s:269    .text:00000000000001a4 .LBE4
+     /tmp/ccwHAveC.s:277    .text:00000000000001ac .LBB5
+     /tmp/ccwHAveC.s:344    .text:0000000000000214 .LBE5
+     /tmp/ccwHAveC.s:444    .text:0000000000000294 .LBB7
+     /tmp/ccwHAveC.s:452    .text:00000000000002a4 .LBE7
+     /tmp/ccwHAveC.s:454    .text:00000000000002a4 .LBB13
+     /tmp/ccwHAveC.s:467    .text:00000000000002b4 .LBE13
+     /tmp/ccwHAveC.s:474    .text:00000000000002bc .LBB14
+     /tmp/ccwHAveC.s:559    .text:0000000000000338 .LBE14
+     /tmp/ccwHAveC.s:576    .text:000000000000034c .LBB15
+     /tmp/ccwHAveC.s:623    .text:0000000000000390 .LBE15
+     /tmp/ccwHAveC.s:476    .text:00000000000002bc .LBB9
+     /tmp/ccwHAveC.s:557    .text:0000000000000338 .LBE9
+     /tmp/ccwHAveC.s:578    .text:000000000000034c .LBB10
+     /tmp/ccwHAveC.s:621    .text:0000000000000390 .LBE10
 
 UNDEFINED SYMBOLS
 __putc

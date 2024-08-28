@@ -2,7 +2,7 @@
 #include "../h/riscv.hpp"
 #include "../h/syscallC.hpp"
 #include "../h/memoryAllocator.hpp"
-
+#include "../h/tcb.hpp"
 
 void Riscv::interruptHandler(){ //PREKIDNA RUTINA
 
@@ -33,13 +33,13 @@ void Riscv::interruptHandler(){ //PREKIDNA RUTINA
                 MemoryAllocator::mem_free((void *)a1);
                 break;
             case THREAD_CREATE:
-                //TCB::threadCreate((TCB**)a1, (body)a2, (void *)a3, (void *)a4);
+                TCB::threadCreate((thread_t *)a1, (body)a2, (void *)a3, (void *)a4);
                 break;
             case THREAD_EXIT:
-                //TCB::threadExit();
+                TCB::threadExit();
                 break;
             case THREAD_DISPATCH:
-                //TCB::dispatch();
+                TCB::dispatch();
                 break;
             case SEM_OPEN:
 
