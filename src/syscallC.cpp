@@ -52,7 +52,6 @@ int sem_open(sem_t* handle, unsigned init) {
 }
 
 int sem_close(sem_t handle) {
-    //NESTO
     syscall(SEM_CLOSE, (uint64)handle);
     int retVal;
     __asm__ volatile("mv %0, a0" : "=r"(retVal));

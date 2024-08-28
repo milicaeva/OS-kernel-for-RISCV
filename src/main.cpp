@@ -1,7 +1,6 @@
 #include "../lib/hw.h"
 #include "../h/memoryAllocator.hpp"
 #include "../h/riscv.hpp"
-#include "../h/syscallC.hpp"
 #include "../h/tcb.hpp"
 
 void workerA(void *) {

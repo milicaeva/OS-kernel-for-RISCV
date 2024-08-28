@@ -7,12 +7,10 @@
 using body=void(*)(void*);
 
 class TCB{
-
 public:
 
-    //friend class SEM;
+    friend class Sem;
     friend class Riscv;
-    friend class Scheduler;
 
     static int id;
     static TCB* running;
@@ -20,9 +18,12 @@ public:
     static int threadCreate(TCB** handle, body routine, void* arg, void* stack);
     static int threadExit();
     static void dispatch();
+    static void yield(TCB*, TCB*);
 
     bool getFinished() { return finished; }
     void setFinished() { finished=true; }
+    bool getBlocked() { return blocked; }
+    void setBlocked() { blocked=true; }
 
     ~TCB() { MemoryAllocator::mem_free(this->stack); }
 
@@ -36,14 +37,13 @@ private:
         uint64 sp;
     };
 
-    TCB(body routine, void* arg, void * stack );
+    TCB(body routine, void* arg, void * stack);
 
     uint64 threadID;
     body routine;
     uint64* stack;
     void* arg;
     Context context;
-    TCB* schedulerNext;
 
     bool finished;
     bool blocked;

@@ -2,6 +2,7 @@
 #define PROJECT_BASE_V1_1_SCHEDULER_HPP
 
 #include "tcb.hpp"
+#include "list.hpp"
 
 class Scheduler{
 public:
@@ -19,7 +20,7 @@ public:
 private:
 
     Scheduler()=default;
-    static TCB* head, *tail;
+    static List<TCB> ready;
 };
 
 #endif

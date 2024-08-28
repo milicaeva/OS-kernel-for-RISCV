@@ -3,8 +3,6 @@
 #define PROJECT_BASE_V1_1_RISCV_HPP
 
 #include "../lib/hw.h"
-
-#include "../lib/hw.h"
 #include "../lib/console.h"
 #include "../h/syscallC.hpp"
 #include "../h/memoryAllocator.hpp"

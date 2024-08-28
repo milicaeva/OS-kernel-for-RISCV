@@ -1,9 +1,6 @@
 #include "../h/tcb.hpp"
 #include "../h/riscv.hpp"
-#include "../h/memoryAllocator.hpp"
 #include "../h/scheduler.hpp"
-#include "../h/syscallC.hpp"
-
 
 TCB* TCB::running = nullptr;
 int TCB::id = 0;
@@ -11,18 +8,16 @@ int TCB::id = 0;
 TCB::TCB(body routine, void* arg, void * stack) : stack(routine!=nullptr ? new uint64[DEFAULT_STACK_SIZE] : nullptr) {
     this->context = {
             (uint64)&TCB::threadWrapper, //ra
-            routine == nullptr ? 0 : (uint64) &this->stack[ DEFAULT_STACK_SIZE ] //
+            routine == nullptr ? 0 : (uint64) &this->stack[ DEFAULT_STACK_SIZE ] //sp
     };
     this->routine=routine;
     this->arg=arg;
     this->finished=false; //menja se u wrapperu
     this->blocked=false; //menja se u sem
-    this->schedulerNext=nullptr;
     this->threadID=++id;
 }
 
 int TCB::threadCreate(TCB ** handle, body routine, void* arg, void* stack) { //handle je ADRESA rucke
-
     *handle=new TCB(routine, arg, stack);
     if(!*handle) return -1;
     if(routine) Scheduler::put(*handle);
@@ -51,6 +46,11 @@ void TCB::dispatch(){
     }
     if (running->finished) delete running;
     running=Scheduler::get();
+    yield(oldRunning, running);
+}
+
+void TCB::yield(TCB* oldRunning, TCB* newRunning) {
+
     Riscv::push();
     contextSwitch(&oldRunning->context, &running->context);
     Riscv::pop();

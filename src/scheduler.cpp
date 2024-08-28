@@ -1,21 +1,13 @@
 #include "../h/scheduler.hpp"
 
-TCB* Scheduler::head=nullptr;
-TCB* Scheduler::tail=nullptr;
+List<TCB> Scheduler::ready;
 
-TCB *Scheduler::get() {
-
-    if (!head) return nullptr;
-    TCB* thread=head;
-    head=head->schedulerNext;
-    if (!head) tail=nullptr;
-    thread->schedulerNext=nullptr;
-    return thread;
+TCB* Scheduler::get(){
+    return ready.get();
 }
 
-void Scheduler::put(TCB *thread) {
-    if (!head) head = tail = thread;
-    else tail = tail -> schedulerNext = thread;
+void Scheduler::put(TCB *thread){
+    ready.put(thread);
 }
 
 void *Scheduler::operator new(size_t size) {

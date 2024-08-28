@@ -1,26 +1,9 @@
 #include "../lib/hw.h"
 #include "../h/memoryAllocator.hpp"
-#include "../lib/console.h"
 
 MemoryAllocator::DBlock* MemoryAllocator::headFull = nullptr;
 MemoryAllocator::DBlock* MemoryAllocator::headFree = nullptr;
 bool MemoryAllocator::initialized = false;
-
-char digits[] = "0123456789";
-
-void printInt(int x)
-{
-    char buf[16];
-    int i;
-
-    i = 0;
-    do{
-        buf[i++] = digits[x % 10];
-    }while((x /= 10) != 0);
-
-    while(--i >= 0)
-        __putc(buf[i]);
-}
 
 const size_t MemoryAllocator::DBlockSize = sizeof(MemoryAllocator::DBlock);
 
@@ -135,6 +118,7 @@ void MemoryAllocator::tryToJoin(DBlock* curr){
     }
 }
 
+/*
 void MemoryAllocator::printMem(){
 
     for (DBlock* blk = headFree; blk; blk=blk->next) {
@@ -148,3 +132,4 @@ void MemoryAllocator::printMem(){
         __putc('\n');
     }
 }
+*/
