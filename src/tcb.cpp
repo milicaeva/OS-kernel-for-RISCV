@@ -46,7 +46,7 @@ void TCB::dispatch(){
     }
     if (running->finished) delete running;
     running=Scheduler::get();
-    yield(oldRunning, running);
+    if(oldRunning!=running) yield(oldRunning, running);
 }
 
 void TCB::yield(TCB* oldRunning, TCB* newRunning) {

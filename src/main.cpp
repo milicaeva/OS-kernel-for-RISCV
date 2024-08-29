@@ -3,7 +3,7 @@
 #include "../h/riscv.hpp"
 #include "../h/tcb.hpp"
 
-void workerA(void *) {
+/*void workerA(void *) {
     for (int i = 0; i < 3; i++) {
         putc('A');
         thread_dispatch();
@@ -24,17 +24,31 @@ void workerC(void*) {
     }
 }
 
-thread_t threads[5];
+thread_t threads[5];*/
+
+thread_t mainThread;
+thread_t userMainThread;
+
+extern void userMain();
+
+void userWrapper(void*) {
+    userMain();
+}
 
 int main(){
 
     Riscv::writeStvec((uint64)&Riscv::supervisorTrap);
     MemoryAllocator::init();
 
-    thread_create(&threads[0], nullptr, nullptr); // main
+    thread_create(&mainThread, nullptr, nullptr); // main
+    TCB::running = mainThread;
 
+    thread_create(&userMainThread, userWrapper, nullptr);
+
+    while (!userMainThread->getFinished()) thread_dispatch();
+
+    /*thread_create(&threads[0], nullptr, nullptr); // main
     TCB::running = threads[0];
-
     thread_create(&threads[1], &workerA, nullptr);
     thread_create(&threads[2], &workerB, nullptr);
     thread_create(&threads[3], &workerC, nullptr);
@@ -42,6 +56,6 @@ int main(){
     while(1){
         putc('M');
         thread_dispatch();
-    }
+    }*/
     return 0;
 }

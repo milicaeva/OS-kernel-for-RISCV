@@ -2,6 +2,7 @@
 #include "../h/riscv.hpp"
 #include "../h/tcb.hpp"
 #include "../h/sem.hpp"
+#include "../lib/console.h"
 
 extern void printStr(char const* string);
 
