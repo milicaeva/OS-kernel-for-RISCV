@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccERNljI.s 			page 1
+GAS LISTING /tmp/ccPZecxI.s 			page 1
 
 
    1              		.file	"memoryAllocator.cpp"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
   39              		.loc 1 13 95
   40 0048 9387F7FF 		addi	a5,a5,-1
   41              		.loc 1 13 23
-GAS LISTING /tmp/ccERNljI.s 			page 2
+GAS LISTING /tmp/ccPZecxI.s 			page 2
 
 
   42 004c 23B0F600 		sd	a5,0(a3)
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
   87 0098 83B60600 		ld	a3,0(a3)
   88 009c 3307D740 		sub	a4,a4,a3
   89 00a0 1307F703 		addi	a4,a4,63
-GAS LISTING /tmp/ccERNljI.s 			page 3
+GAS LISTING /tmp/ccPZecxI.s 			page 3
 
 
   90              		.loc 1 22 80 discriminator 2
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
   39:src/memoryAllocator.cpp ****             curr->prev=nullptr;
  127              		.loc 1 39 13 is_stmt 1
  128              		.loc 1 39 23 is_stmt 0
-GAS LISTING /tmp/ccERNljI.s 			page 4
+GAS LISTING /tmp/ccPZecxI.s 			page 4
 
 
  129 00dc 23380500 		sd	zero,16(a0)
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
  161              		.loc 1 60 48 is_stmt 0 discriminator 1
  162 010c 23B8A700 		sd	a0,16(a5)
  163              	.L16:
-GAS LISTING /tmp/ccERNljI.s 			page 5
+GAS LISTING /tmp/ccPZecxI.s 			page 5
 
 
   61:src/memoryAllocator.cpp ****         curr->prev=currUsed;
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
  203              	.LVL11:
   29:src/memoryAllocator.cpp ****             if(curr->prev) curr->prev->next=curr->next; //izbacen iz free liste
  204              		.loc 1 29 13
-GAS LISTING /tmp/ccERNljI.s 			page 6
+GAS LISTING /tmp/ccPZecxI.s 			page 6
 
 
  205 0134 63860700 		beqz	a5,.L9
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
   46:src/memoryAllocator.cpp ****             return (char*)curr+DBlockSize;
  241              		.loc 1 46 21 is_stmt 0
  242 0170 97070000 		sd	a0,.LANCHOR0+16,a5
-GAS LISTING /tmp/ccERNljI.s 			page 7
+GAS LISTING /tmp/ccPZecxI.s 			page 7
 
 
  242      23B0A700 
@@ -418,7 +418,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
   71:src/memoryAllocator.cpp **** int MemoryAllocator::mem_free (void* ptr){
   72:src/memoryAllocator.cpp **** 
   73:src/memoryAllocator.cpp ****     if(!ptr) return -1;
-GAS LISTING /tmp/ccERNljI.s 			page 8
+GAS LISTING /tmp/ccPZecxI.s 			page 8
 
 
   74:src/memoryAllocator.cpp ****     ptr=(DBlock*)((char*)ptr-DBlockSize);
@@ -478,7 +478,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
  298 01b8 83378500 		ld	a5,8(a0)
  299              		.loc 1 114 5
  300 01bc 638A0700 		beqz	a5,.L25
-GAS LISTING /tmp/ccERNljI.s 			page 9
+GAS LISTING /tmp/ccPZecxI.s 			page 9
 
 
  301              		.loc 1 114 40 discriminator 1
@@ -538,7 +538,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
  343              	_ZN15MemoryAllocator8mem_freeEPv:
  344              	.LFB2:
   71:src/memoryAllocator.cpp **** 
-GAS LISTING /tmp/ccERNljI.s 			page 10
+GAS LISTING /tmp/ccPZecxI.s 			page 10
 
 
  345              		.loc 1 71 42 is_stmt 1
@@ -598,7 +598,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
  387              		.loc 1 75 37 is_stmt 0 discriminator 2
  388 0234 E3FAA4FE 		bgeu	s1,a0,.L31
  389              	.LBE13:
-GAS LISTING /tmp/ccERNljI.s 			page 11
+GAS LISTING /tmp/ccPZecxI.s 			page 11
 
 
  109:src/memoryAllocator.cpp **** }
@@ -658,7 +658,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
  427              		.loc 1 80 24
  428 0268 23B80400 		sd	zero,16(s1)
   84:src/memoryAllocator.cpp ****                 headFree=curr;
-GAS LISTING /tmp/ccERNljI.s 			page 12
+GAS LISTING /tmp/ccPZecxI.s 			page 12
 
 
  429              		.loc 1 84 13 is_stmt 1
@@ -718,7 +718,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
  464              		.loc 1 103 13 is_stmt 1
  103:src/memoryAllocator.cpp ****             tryToJoin(curr->prev);
  465              		.loc 1 103 22 is_stmt 0
-GAS LISTING /tmp/ccERNljI.s 			page 13
+GAS LISTING /tmp/ccPZecxI.s 			page 13
 
 
  466 02a0 13850400 		mv	a0,s1
@@ -778,7 +778,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
  508              		.loc 1 85 17 is_stmt 1
   85:src/memoryAllocator.cpp ****                 return 0;
  509              		.loc 1 85 25 is_stmt 0
-GAS LISTING /tmp/ccERNljI.s 			page 14
+GAS LISTING /tmp/ccPZecxI.s 			page 14
 
 
  510 02e0 97070000 		sd	s1,.LANCHOR0+8,a5
@@ -838,7 +838,7 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
  548              	.LVL39:
  110:src/memoryAllocator.cpp **** 
  549              		.loc 1 110 1
-GAS LISTING /tmp/ccERNljI.s 			page 15
+GAS LISTING /tmp/ccPZecxI.s 			page 15
 
 
  550 0318 67800000 		ret
@@ -870,454 +870,454 @@ GAS LISTING /tmp/ccERNljI.s 			page 1
  581              	.Letext0:
  582              		.file 2 "src/../lib/hw.h"
  583              		.file 3 "src/../h/memoryAllocator.hpp"
-GAS LISTING /tmp/ccERNljI.s 			page 16
+GAS LISTING /tmp/ccPZecxI.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 memoryAllocator.cpp
-     /tmp/ccERNljI.s:9      .text:0000000000000000 _ZN15MemoryAllocator4initEv
-     /tmp/ccERNljI.s:13     .text:0000000000000000 .L0 
-     /tmp/ccERNljI.s:14     .text:0000000000000000 .L0 
-     /tmp/ccERNljI.s:15     .text:0000000000000004 .L0 
-     /tmp/ccERNljI.s:17     .text:0000000000000008 .L0 
-     /tmp/ccERNljI.s:19     .text:000000000000000c .L0 
-     /tmp/ccERNljI.s:21     .text:000000000000000c .L0 
-     /tmp/ccERNljI.s:22     .text:000000000000000c .L0 
-     /tmp/ccERNljI.s:24     .text:0000000000000014 .L0 
-     /tmp/ccERNljI.s:26     .text:0000000000000018 .L0 
-     /tmp/ccERNljI.s:27     .text:0000000000000018 .L0 
-     /tmp/ccERNljI.s:32     .text:0000000000000030 .L0 
-     /tmp/ccERNljI.s:33     .text:0000000000000030 .L0 
-     /tmp/ccERNljI.s:38     .text:0000000000000044 .L0 
-     /tmp/ccERNljI.s:40     .text:0000000000000048 .L0 
-     /tmp/ccERNljI.s:42     .text:000000000000004c .L0 
-     /tmp/ccERNljI.s:44     .text:0000000000000050 .L0 
-     /tmp/ccERNljI.s:45     .text:0000000000000050 .L0 
-     /tmp/ccERNljI.s:47     .text:0000000000000054 .L0 
-     /tmp/ccERNljI.s:49     .text:0000000000000058 .L0 
-     /tmp/ccERNljI.s:50     .text:0000000000000058 .L0 
-     /tmp/ccERNljI.s:52     .text:000000000000005c .L0 
-     /tmp/ccERNljI.s:53     .text:000000000000005c .L0 
-     /tmp/ccERNljI.s:57     .text:0000000000000064 .L0 
-     /tmp/ccERNljI.s:58     .text:0000000000000068 .L0 
-     /tmp/ccERNljI.s:59     .text:0000000000000068 .L0 
-     /tmp/ccERNljI.s:61     .text:000000000000006c .L0 
-     /tmp/ccERNljI.s:63     .text:0000000000000070 .L0 
-     /tmp/ccERNljI.s:69     .text:0000000000000070 _ZN15MemoryAllocator9mem_allocEm
-     /tmp/ccERNljI.s:72     .text:0000000000000070 .L0 
-     /tmp/ccERNljI.s:74     .text:0000000000000070 .L0 
-     /tmp/ccERNljI.s:75     .text:0000000000000074 .L0 
-     /tmp/ccERNljI.s:77     .text:0000000000000078 .L0 
-     /tmp/ccERNljI.s:79     .text:000000000000007c .L0 
-     /tmp/ccERNljI.s:81     .text:000000000000007c .L0 
-     /tmp/ccERNljI.s:84     .text:0000000000000084 .L0 
-     /tmp/ccERNljI.s:91     .text:00000000000000a4 .L0 
-     /tmp/ccERNljI.s:93     .text:00000000000000a8 .L0 
-     /tmp/ccERNljI.s:96     .text:00000000000000ac .L0 
-     /tmp/ccERNljI.s:98     .text:00000000000000ac .L0 
-     /tmp/ccERNljI.s:99     .text:00000000000000ac .L0 
-     /tmp/ccERNljI.s:105    .text:00000000000000b8 .L0 
-     /tmp/ccERNljI.s:108    .text:00000000000000bc .L0 
-     /tmp/ccERNljI.s:109    .text:00000000000000bc .L0 
-     /tmp/ccERNljI.s:111    .text:00000000000000c0 .L0 
-     /tmp/ccERNljI.s:113    .text:00000000000000c4 .L0 
-     /tmp/ccERNljI.s:115    .text:00000000000000c8 .L0 
-     /tmp/ccERNljI.s:116    .text:00000000000000c8 .L0 
-     /tmp/ccERNljI.s:119    .text:00000000000000d0 .L0 
-     /tmp/ccERNljI.s:120    .text:00000000000000d0 .L0 
-     /tmp/ccERNljI.s:122    .text:00000000000000d4 .L0 
-     /tmp/ccERNljI.s:125    .text:00000000000000d8 .L0 
-     /tmp/ccERNljI.s:126    .text:00000000000000d8 .L0 
-     /tmp/ccERNljI.s:128    .text:00000000000000dc .L0 
-     /tmp/ccERNljI.s:129    .text:00000000000000dc .L0 
-GAS LISTING /tmp/ccERNljI.s 			page 17
+     /tmp/ccPZecxI.s:9      .text:0000000000000000 _ZN15MemoryAllocator4initEv
+     /tmp/ccPZecxI.s:13     .text:0000000000000000 .L0 
+     /tmp/ccPZecxI.s:14     .text:0000000000000000 .L0 
+     /tmp/ccPZecxI.s:15     .text:0000000000000004 .L0 
+     /tmp/ccPZecxI.s:17     .text:0000000000000008 .L0 
+     /tmp/ccPZecxI.s:19     .text:000000000000000c .L0 
+     /tmp/ccPZecxI.s:21     .text:000000000000000c .L0 
+     /tmp/ccPZecxI.s:22     .text:000000000000000c .L0 
+     /tmp/ccPZecxI.s:24     .text:0000000000000014 .L0 
+     /tmp/ccPZecxI.s:26     .text:0000000000000018 .L0 
+     /tmp/ccPZecxI.s:27     .text:0000000000000018 .L0 
+     /tmp/ccPZecxI.s:32     .text:0000000000000030 .L0 
+     /tmp/ccPZecxI.s:33     .text:0000000000000030 .L0 
+     /tmp/ccPZecxI.s:38     .text:0000000000000044 .L0 
+     /tmp/ccPZecxI.s:40     .text:0000000000000048 .L0 
+     /tmp/ccPZecxI.s:42     .text:000000000000004c .L0 
+     /tmp/ccPZecxI.s:44     .text:0000000000000050 .L0 
+     /tmp/ccPZecxI.s:45     .text:0000000000000050 .L0 
+     /tmp/ccPZecxI.s:47     .text:0000000000000054 .L0 
+     /tmp/ccPZecxI.s:49     .text:0000000000000058 .L0 
+     /tmp/ccPZecxI.s:50     .text:0000000000000058 .L0 
+     /tmp/ccPZecxI.s:52     .text:000000000000005c .L0 
+     /tmp/ccPZecxI.s:53     .text:000000000000005c .L0 
+     /tmp/ccPZecxI.s:57     .text:0000000000000064 .L0 
+     /tmp/ccPZecxI.s:58     .text:0000000000000068 .L0 
+     /tmp/ccPZecxI.s:59     .text:0000000000000068 .L0 
+     /tmp/ccPZecxI.s:61     .text:000000000000006c .L0 
+     /tmp/ccPZecxI.s:63     .text:0000000000000070 .L0 
+     /tmp/ccPZecxI.s:69     .text:0000000000000070 _ZN15MemoryAllocator9mem_allocEm
+     /tmp/ccPZecxI.s:72     .text:0000000000000070 .L0 
+     /tmp/ccPZecxI.s:74     .text:0000000000000070 .L0 
+     /tmp/ccPZecxI.s:75     .text:0000000000000074 .L0 
+     /tmp/ccPZecxI.s:77     .text:0000000000000078 .L0 
+     /tmp/ccPZecxI.s:79     .text:000000000000007c .L0 
+     /tmp/ccPZecxI.s:81     .text:000000000000007c .L0 
+     /tmp/ccPZecxI.s:84     .text:0000000000000084 .L0 
+     /tmp/ccPZecxI.s:91     .text:00000000000000a4 .L0 
+     /tmp/ccPZecxI.s:93     .text:00000000000000a8 .L0 
+     /tmp/ccPZecxI.s:96     .text:00000000000000ac .L0 
+     /tmp/ccPZecxI.s:98     .text:00000000000000ac .L0 
+     /tmp/ccPZecxI.s:99     .text:00000000000000ac .L0 
+     /tmp/ccPZecxI.s:105    .text:00000000000000b8 .L0 
+     /tmp/ccPZecxI.s:108    .text:00000000000000bc .L0 
+     /tmp/ccPZecxI.s:109    .text:00000000000000bc .L0 
+     /tmp/ccPZecxI.s:111    .text:00000000000000c0 .L0 
+     /tmp/ccPZecxI.s:113    .text:00000000000000c4 .L0 
+     /tmp/ccPZecxI.s:115    .text:00000000000000c8 .L0 
+     /tmp/ccPZecxI.s:116    .text:00000000000000c8 .L0 
+     /tmp/ccPZecxI.s:119    .text:00000000000000d0 .L0 
+     /tmp/ccPZecxI.s:120    .text:00000000000000d0 .L0 
+     /tmp/ccPZecxI.s:122    .text:00000000000000d4 .L0 
+     /tmp/ccPZecxI.s:125    .text:00000000000000d8 .L0 
+     /tmp/ccPZecxI.s:126    .text:00000000000000d8 .L0 
+     /tmp/ccPZecxI.s:128    .text:00000000000000dc .L0 
+     /tmp/ccPZecxI.s:129    .text:00000000000000dc .L0 
+GAS LISTING /tmp/ccPZecxI.s 			page 17
 
 
-     /tmp/ccERNljI.s:131    .text:00000000000000e0 .L0 
-     /tmp/ccERNljI.s:132    .text:00000000000000e0 .L0 
-     /tmp/ccERNljI.s:136    .text:00000000000000e4 .L0 
-     /tmp/ccERNljI.s:137    .text:00000000000000e4 .L0 
-     /tmp/ccERNljI.s:139    .text:00000000000000ec .L0 
-     /tmp/ccERNljI.s:141    .text:00000000000000f0 .L0 
-     /tmp/ccERNljI.s:145    .text:00000000000000f4 .L0 
-     /tmp/ccERNljI.s:146    .text:00000000000000f4 .L0 
-     /tmp/ccERNljI.s:148    .text:00000000000000f8 .L0 
-     /tmp/ccERNljI.s:151    .text:00000000000000fc .L0 
-     /tmp/ccERNljI.s:153    .text:0000000000000100 .L0 
-     /tmp/ccERNljI.s:156    .text:0000000000000104 .L0 
-     /tmp/ccERNljI.s:157    .text:0000000000000104 .L0 
-     /tmp/ccERNljI.s:159    .text:0000000000000108 .L0 
-     /tmp/ccERNljI.s:161    .text:000000000000010c .L0 
-     /tmp/ccERNljI.s:162    .text:000000000000010c .L0 
-     /tmp/ccERNljI.s:165    .text:0000000000000110 .L0 
-     /tmp/ccERNljI.s:166    .text:0000000000000110 .L0 
-     /tmp/ccERNljI.s:168    .text:0000000000000114 .L0 
-     /tmp/ccERNljI.s:169    .text:0000000000000114 .L0 
-     /tmp/ccERNljI.s:171    .text:0000000000000118 .L0 
-     /tmp/ccERNljI.s:172    .text:0000000000000118 .L0 
-     /tmp/ccERNljI.s:178    .text:000000000000011c .L0 
-     /tmp/ccERNljI.s:179    .text:0000000000000120 .L0 
-     /tmp/ccERNljI.s:180    .text:0000000000000120 .L0 
-     /tmp/ccERNljI.s:181    .text:0000000000000120 .L0 
-     /tmp/ccERNljI.s:183    .text:0000000000000124 .L0 
-     /tmp/ccERNljI.s:187    .text:0000000000000128 .L0 
-     /tmp/ccERNljI.s:192    .text:0000000000000128 .L0 
-     /tmp/ccERNljI.s:193    .text:0000000000000128 .L0 
-     /tmp/ccERNljI.s:194    .text:0000000000000128 .L0 
-     /tmp/ccERNljI.s:197    .text:000000000000012c .L0 
-     /tmp/ccERNljI.s:201    .text:0000000000000130 .L0 
-     /tmp/ccERNljI.s:202    .text:0000000000000130 .L0 
-     /tmp/ccERNljI.s:205    .text:0000000000000134 .L0 
-     /tmp/ccERNljI.s:207    .text:0000000000000138 .L0 
-     /tmp/ccERNljI.s:208    .text:0000000000000138 .L0 
-     /tmp/ccERNljI.s:210    .text:000000000000013c .L0 
-     /tmp/ccERNljI.s:213    .text:0000000000000140 .L0 
-     /tmp/ccERNljI.s:214    .text:0000000000000140 .L0 
-     /tmp/ccERNljI.s:216    .text:0000000000000144 .L0 
-     /tmp/ccERNljI.s:218    .text:0000000000000148 .L0 
-     /tmp/ccERNljI.s:219    .text:0000000000000148 .L0 
-     /tmp/ccERNljI.s:221    .text:000000000000014c .L0 
-     /tmp/ccERNljI.s:224    .text:0000000000000150 .L0 
-     /tmp/ccERNljI.s:227    .text:0000000000000154 .L0 
-     /tmp/ccERNljI.s:228    .text:0000000000000154 .L0 
-     /tmp/ccERNljI.s:230    .text:0000000000000158 .L0 
-     /tmp/ccERNljI.s:234    .text:0000000000000160 .L0 
-     /tmp/ccERNljI.s:235    .text:0000000000000160 .L0 
-     /tmp/ccERNljI.s:237    .text:0000000000000164 .L0 
-     /tmp/ccERNljI.s:241    .text:0000000000000170 .L0 
-     /tmp/ccERNljI.s:242    .text:0000000000000170 .L0 
-     /tmp/ccERNljI.s:244    .text:0000000000000178 .L0 
-     /tmp/ccERNljI.s:245    .text:0000000000000178 .L0 
-     /tmp/ccERNljI.s:251    .text:0000000000000180 .L0 
-     /tmp/ccERNljI.s:252    .text:0000000000000180 .L0 
-GAS LISTING /tmp/ccERNljI.s 			page 18
+     /tmp/ccPZecxI.s:131    .text:00000000000000e0 .L0 
+     /tmp/ccPZecxI.s:132    .text:00000000000000e0 .L0 
+     /tmp/ccPZecxI.s:136    .text:00000000000000e4 .L0 
+     /tmp/ccPZecxI.s:137    .text:00000000000000e4 .L0 
+     /tmp/ccPZecxI.s:139    .text:00000000000000ec .L0 
+     /tmp/ccPZecxI.s:141    .text:00000000000000f0 .L0 
+     /tmp/ccPZecxI.s:145    .text:00000000000000f4 .L0 
+     /tmp/ccPZecxI.s:146    .text:00000000000000f4 .L0 
+     /tmp/ccPZecxI.s:148    .text:00000000000000f8 .L0 
+     /tmp/ccPZecxI.s:151    .text:00000000000000fc .L0 
+     /tmp/ccPZecxI.s:153    .text:0000000000000100 .L0 
+     /tmp/ccPZecxI.s:156    .text:0000000000000104 .L0 
+     /tmp/ccPZecxI.s:157    .text:0000000000000104 .L0 
+     /tmp/ccPZecxI.s:159    .text:0000000000000108 .L0 
+     /tmp/ccPZecxI.s:161    .text:000000000000010c .L0 
+     /tmp/ccPZecxI.s:162    .text:000000000000010c .L0 
+     /tmp/ccPZecxI.s:165    .text:0000000000000110 .L0 
+     /tmp/ccPZecxI.s:166    .text:0000000000000110 .L0 
+     /tmp/ccPZecxI.s:168    .text:0000000000000114 .L0 
+     /tmp/ccPZecxI.s:169    .text:0000000000000114 .L0 
+     /tmp/ccPZecxI.s:171    .text:0000000000000118 .L0 
+     /tmp/ccPZecxI.s:172    .text:0000000000000118 .L0 
+     /tmp/ccPZecxI.s:178    .text:000000000000011c .L0 
+     /tmp/ccPZecxI.s:179    .text:0000000000000120 .L0 
+     /tmp/ccPZecxI.s:180    .text:0000000000000120 .L0 
+     /tmp/ccPZecxI.s:181    .text:0000000000000120 .L0 
+     /tmp/ccPZecxI.s:183    .text:0000000000000124 .L0 
+     /tmp/ccPZecxI.s:187    .text:0000000000000128 .L0 
+     /tmp/ccPZecxI.s:192    .text:0000000000000128 .L0 
+     /tmp/ccPZecxI.s:193    .text:0000000000000128 .L0 
+     /tmp/ccPZecxI.s:194    .text:0000000000000128 .L0 
+     /tmp/ccPZecxI.s:197    .text:000000000000012c .L0 
+     /tmp/ccPZecxI.s:201    .text:0000000000000130 .L0 
+     /tmp/ccPZecxI.s:202    .text:0000000000000130 .L0 
+     /tmp/ccPZecxI.s:205    .text:0000000000000134 .L0 
+     /tmp/ccPZecxI.s:207    .text:0000000000000138 .L0 
+     /tmp/ccPZecxI.s:208    .text:0000000000000138 .L0 
+     /tmp/ccPZecxI.s:210    .text:000000000000013c .L0 
+     /tmp/ccPZecxI.s:213    .text:0000000000000140 .L0 
+     /tmp/ccPZecxI.s:214    .text:0000000000000140 .L0 
+     /tmp/ccPZecxI.s:216    .text:0000000000000144 .L0 
+     /tmp/ccPZecxI.s:218    .text:0000000000000148 .L0 
+     /tmp/ccPZecxI.s:219    .text:0000000000000148 .L0 
+     /tmp/ccPZecxI.s:221    .text:000000000000014c .L0 
+     /tmp/ccPZecxI.s:224    .text:0000000000000150 .L0 
+     /tmp/ccPZecxI.s:227    .text:0000000000000154 .L0 
+     /tmp/ccPZecxI.s:228    .text:0000000000000154 .L0 
+     /tmp/ccPZecxI.s:230    .text:0000000000000158 .L0 
+     /tmp/ccPZecxI.s:234    .text:0000000000000160 .L0 
+     /tmp/ccPZecxI.s:235    .text:0000000000000160 .L0 
+     /tmp/ccPZecxI.s:237    .text:0000000000000164 .L0 
+     /tmp/ccPZecxI.s:241    .text:0000000000000170 .L0 
+     /tmp/ccPZecxI.s:242    .text:0000000000000170 .L0 
+     /tmp/ccPZecxI.s:244    .text:0000000000000178 .L0 
+     /tmp/ccPZecxI.s:245    .text:0000000000000178 .L0 
+     /tmp/ccPZecxI.s:251    .text:0000000000000180 .L0 
+     /tmp/ccPZecxI.s:252    .text:0000000000000180 .L0 
+GAS LISTING /tmp/ccPZecxI.s 			page 18
 
 
-     /tmp/ccERNljI.s:254    .text:0000000000000184 .L0 
-     /tmp/ccERNljI.s:255    .text:0000000000000184 .L0 
-     /tmp/ccERNljI.s:257    .text:0000000000000188 .L0 
-     /tmp/ccERNljI.s:258    .text:0000000000000188 .L0 
-     /tmp/ccERNljI.s:260    .text:0000000000000190 .L0 
-     /tmp/ccERNljI.s:261    .text:0000000000000190 .L0 
-     /tmp/ccERNljI.s:269    .text:0000000000000198 .L0 
-     /tmp/ccERNljI.s:277    .text:00000000000001a8 .L0 
-     /tmp/ccERNljI.s:283    .text:00000000000001a8 _ZN15MemoryAllocator9tryToJoinEPNS_6DBlockE
-     /tmp/ccERNljI.s:286    .text:00000000000001a8 .L0 
-     /tmp/ccERNljI.s:288    .text:00000000000001a8 .L0 
-     /tmp/ccERNljI.s:289    .text:00000000000001ac .L0 
-     /tmp/ccERNljI.s:291    .text:00000000000001b0 .L0 
-     /tmp/ccERNljI.s:293    .text:00000000000001b4 .L0 
-     /tmp/ccERNljI.s:295    .text:00000000000001b4 .L0 
-     /tmp/ccERNljI.s:297    .text:00000000000001b8 .L0 
-     /tmp/ccERNljI.s:298    .text:00000000000001b8 .L0 
-     /tmp/ccERNljI.s:300    .text:00000000000001bc .L0 
-     /tmp/ccERNljI.s:302    .text:00000000000001c0 .L0 
-     /tmp/ccERNljI.s:304    .text:00000000000001c4 .L0 
-     /tmp/ccERNljI.s:306    .text:00000000000001c8 .L0 
-     /tmp/ccERNljI.s:308    .text:00000000000001cc .L0 
-     /tmp/ccERNljI.s:311    .text:00000000000001d0 .L0 
-     /tmp/ccERNljI.s:312    .text:00000000000001d4 .L0 
-     /tmp/ccERNljI.s:313    .text:00000000000001d4 .L0 
-     /tmp/ccERNljI.s:314    .text:00000000000001d4 .L0 
-     /tmp/ccERNljI.s:316    .text:00000000000001d8 .L0 
-     /tmp/ccERNljI.s:319    .text:00000000000001dc .L0 
-     /tmp/ccERNljI.s:321    .text:00000000000001dc .L0 
-     /tmp/ccERNljI.s:322    .text:00000000000001dc .L0 
-     /tmp/ccERNljI.s:324    .text:00000000000001e0 .L0 
-     /tmp/ccERNljI.s:327    .text:00000000000001e8 .L0 
-     /tmp/ccERNljI.s:328    .text:00000000000001e8 .L0 
-     /tmp/ccERNljI.s:330    .text:00000000000001ec .L0 
-     /tmp/ccERNljI.s:332    .text:00000000000001f0 .L0 
-     /tmp/ccERNljI.s:334    .text:00000000000001f4 .L0 
-     /tmp/ccERNljI.s:335    .text:00000000000001f4 .L0 
-     /tmp/ccERNljI.s:337    .text:00000000000001fc .L0 
-     /tmp/ccERNljI.s:343    .text:00000000000001fc _ZN15MemoryAllocator8mem_freeEPv
-     /tmp/ccERNljI.s:346    .text:00000000000001fc .L0 
-     /tmp/ccERNljI.s:348    .text:00000000000001fc .L0 
-     /tmp/ccERNljI.s:349    .text:00000000000001fc .L0 
-     /tmp/ccERNljI.s:351    .text:0000000000000200 .L0 
-     /tmp/ccERNljI.s:352    .text:0000000000000204 .L0 
-     /tmp/ccERNljI.s:356    .text:0000000000000210 .L0 
-     /tmp/ccERNljI.s:357    .text:0000000000000210 .L0 
-     /tmp/ccERNljI.s:358    .text:0000000000000210 .L0 
-     /tmp/ccERNljI.s:360    .text:0000000000000214 .L0 
-     /tmp/ccERNljI.s:362    .text:0000000000000214 .L0 
-     /tmp/ccERNljI.s:363    .text:0000000000000214 .L0 
-     /tmp/ccERNljI.s:367    .text:0000000000000218 .L0 
-     /tmp/ccERNljI.s:368    .text:0000000000000218 .L0 
-     /tmp/ccERNljI.s:378    .text:0000000000000228 .L0 
-     /tmp/ccERNljI.s:381    .text:000000000000022c .L0 
-     /tmp/ccERNljI.s:382    .text:000000000000022c .L0 
-     /tmp/ccERNljI.s:386    .text:0000000000000230 .L0 
-     /tmp/ccERNljI.s:388    .text:0000000000000234 .L0 
-GAS LISTING /tmp/ccERNljI.s 			page 19
+     /tmp/ccPZecxI.s:254    .text:0000000000000184 .L0 
+     /tmp/ccPZecxI.s:255    .text:0000000000000184 .L0 
+     /tmp/ccPZecxI.s:257    .text:0000000000000188 .L0 
+     /tmp/ccPZecxI.s:258    .text:0000000000000188 .L0 
+     /tmp/ccPZecxI.s:260    .text:0000000000000190 .L0 
+     /tmp/ccPZecxI.s:261    .text:0000000000000190 .L0 
+     /tmp/ccPZecxI.s:269    .text:0000000000000198 .L0 
+     /tmp/ccPZecxI.s:277    .text:00000000000001a8 .L0 
+     /tmp/ccPZecxI.s:283    .text:00000000000001a8 _ZN15MemoryAllocator9tryToJoinEPNS_6DBlockE
+     /tmp/ccPZecxI.s:286    .text:00000000000001a8 .L0 
+     /tmp/ccPZecxI.s:288    .text:00000000000001a8 .L0 
+     /tmp/ccPZecxI.s:289    .text:00000000000001ac .L0 
+     /tmp/ccPZecxI.s:291    .text:00000000000001b0 .L0 
+     /tmp/ccPZecxI.s:293    .text:00000000000001b4 .L0 
+     /tmp/ccPZecxI.s:295    .text:00000000000001b4 .L0 
+     /tmp/ccPZecxI.s:297    .text:00000000000001b8 .L0 
+     /tmp/ccPZecxI.s:298    .text:00000000000001b8 .L0 
+     /tmp/ccPZecxI.s:300    .text:00000000000001bc .L0 
+     /tmp/ccPZecxI.s:302    .text:00000000000001c0 .L0 
+     /tmp/ccPZecxI.s:304    .text:00000000000001c4 .L0 
+     /tmp/ccPZecxI.s:306    .text:00000000000001c8 .L0 
+     /tmp/ccPZecxI.s:308    .text:00000000000001cc .L0 
+     /tmp/ccPZecxI.s:311    .text:00000000000001d0 .L0 
+     /tmp/ccPZecxI.s:312    .text:00000000000001d4 .L0 
+     /tmp/ccPZecxI.s:313    .text:00000000000001d4 .L0 
+     /tmp/ccPZecxI.s:314    .text:00000000000001d4 .L0 
+     /tmp/ccPZecxI.s:316    .text:00000000000001d8 .L0 
+     /tmp/ccPZecxI.s:319    .text:00000000000001dc .L0 
+     /tmp/ccPZecxI.s:321    .text:00000000000001dc .L0 
+     /tmp/ccPZecxI.s:322    .text:00000000000001dc .L0 
+     /tmp/ccPZecxI.s:324    .text:00000000000001e0 .L0 
+     /tmp/ccPZecxI.s:327    .text:00000000000001e8 .L0 
+     /tmp/ccPZecxI.s:328    .text:00000000000001e8 .L0 
+     /tmp/ccPZecxI.s:330    .text:00000000000001ec .L0 
+     /tmp/ccPZecxI.s:332    .text:00000000000001f0 .L0 
+     /tmp/ccPZecxI.s:334    .text:00000000000001f4 .L0 
+     /tmp/ccPZecxI.s:335    .text:00000000000001f4 .L0 
+     /tmp/ccPZecxI.s:337    .text:00000000000001fc .L0 
+     /tmp/ccPZecxI.s:343    .text:00000000000001fc _ZN15MemoryAllocator8mem_freeEPv
+     /tmp/ccPZecxI.s:346    .text:00000000000001fc .L0 
+     /tmp/ccPZecxI.s:348    .text:00000000000001fc .L0 
+     /tmp/ccPZecxI.s:349    .text:00000000000001fc .L0 
+     /tmp/ccPZecxI.s:351    .text:0000000000000200 .L0 
+     /tmp/ccPZecxI.s:352    .text:0000000000000204 .L0 
+     /tmp/ccPZecxI.s:356    .text:0000000000000210 .L0 
+     /tmp/ccPZecxI.s:357    .text:0000000000000210 .L0 
+     /tmp/ccPZecxI.s:358    .text:0000000000000210 .L0 
+     /tmp/ccPZecxI.s:360    .text:0000000000000214 .L0 
+     /tmp/ccPZecxI.s:362    .text:0000000000000214 .L0 
+     /tmp/ccPZecxI.s:363    .text:0000000000000214 .L0 
+     /tmp/ccPZecxI.s:367    .text:0000000000000218 .L0 
+     /tmp/ccPZecxI.s:368    .text:0000000000000218 .L0 
+     /tmp/ccPZecxI.s:378    .text:0000000000000228 .L0 
+     /tmp/ccPZecxI.s:381    .text:000000000000022c .L0 
+     /tmp/ccPZecxI.s:382    .text:000000000000022c .L0 
+     /tmp/ccPZecxI.s:386    .text:0000000000000230 .L0 
+     /tmp/ccPZecxI.s:388    .text:0000000000000234 .L0 
+GAS LISTING /tmp/ccPZecxI.s 			page 19
 
 
-     /tmp/ccERNljI.s:391    .text:0000000000000238 .L0 
-     /tmp/ccERNljI.s:400    .text:0000000000000240 .L0 
-     /tmp/ccERNljI.s:401    .text:0000000000000240 .L0 
-     /tmp/ccERNljI.s:403    .text:0000000000000244 .L0 
-     /tmp/ccERNljI.s:405    .text:0000000000000248 .L0 
-     /tmp/ccERNljI.s:406    .text:0000000000000248 .L0 
-     /tmp/ccERNljI.s:408    .text:000000000000024c .L0 
-     /tmp/ccERNljI.s:411    .text:0000000000000250 .L0 
-     /tmp/ccERNljI.s:412    .text:0000000000000250 .L0 
-     /tmp/ccERNljI.s:414    .text:0000000000000254 .L0 
-     /tmp/ccERNljI.s:416    .text:0000000000000258 .L0 
-     /tmp/ccERNljI.s:417    .text:0000000000000258 .L0 
-     /tmp/ccERNljI.s:419    .text:000000000000025c .L0 
-     /tmp/ccERNljI.s:422    .text:0000000000000260 .L0 
-     /tmp/ccERNljI.s:425    .text:0000000000000264 .L0 
-     /tmp/ccERNljI.s:426    .text:0000000000000264 .L0 
-     /tmp/ccERNljI.s:428    .text:0000000000000268 .L0 
-     /tmp/ccERNljI.s:430    .text:000000000000026c .L0 
-     /tmp/ccERNljI.s:431    .text:000000000000026c .L0 
-     /tmp/ccERNljI.s:433    .text:0000000000000274 .L0 
-     /tmp/ccERNljI.s:435    .text:0000000000000278 .L0 
-     /tmp/ccERNljI.s:439    .text:000000000000027c .L0 
-     /tmp/ccERNljI.s:440    .text:000000000000027c .L0 
-     /tmp/ccERNljI.s:442    .text:0000000000000280 .L0 
-     /tmp/ccERNljI.s:445    .text:0000000000000284 .L0 
-     /tmp/ccERNljI.s:447    .text:0000000000000288 .L0 
-     /tmp/ccERNljI.s:450    .text:000000000000028c .L0 
-     /tmp/ccERNljI.s:451    .text:000000000000028c .L0 
-     /tmp/ccERNljI.s:453    .text:0000000000000290 .L0 
-     /tmp/ccERNljI.s:455    .text:0000000000000294 .L0 
-     /tmp/ccERNljI.s:456    .text:0000000000000294 .L0 
-     /tmp/ccERNljI.s:459    .text:0000000000000298 .L0 
-     /tmp/ccERNljI.s:460    .text:0000000000000298 .L0 
-     /tmp/ccERNljI.s:462    .text:000000000000029c .L0 
-     /tmp/ccERNljI.s:463    .text:000000000000029c .L0 
-     /tmp/ccERNljI.s:465    .text:00000000000002a0 .L0 
-     /tmp/ccERNljI.s:466    .text:00000000000002a0 .L0 
-     /tmp/ccERNljI.s:471    .text:00000000000002ac .L0 
-     /tmp/ccERNljI.s:472    .text:00000000000002ac .L0 
-     /tmp/ccERNljI.s:476    .text:00000000000002b8 .L0 
-     /tmp/ccERNljI.s:477    .text:00000000000002b8 .L0 
-     /tmp/ccERNljI.s:483    .text:00000000000002bc .L0 
-     /tmp/ccERNljI.s:484    .text:00000000000002c0 .L0 
-     /tmp/ccERNljI.s:485    .text:00000000000002c0 .L0 
-     /tmp/ccERNljI.s:487    .text:00000000000002c4 .L0 
-     /tmp/ccERNljI.s:488    .text:00000000000002c4 .L0 
-     /tmp/ccERNljI.s:490    .text:00000000000002c8 .L0 
-     /tmp/ccERNljI.s:493    .text:00000000000002cc .L0 
-     /tmp/ccERNljI.s:497    .text:00000000000002d0 .L0 
-     /tmp/ccERNljI.s:502    .text:00000000000002d0 .L0 
-     /tmp/ccERNljI.s:503    .text:00000000000002d0 .L0 
-     /tmp/ccERNljI.s:505    .text:00000000000002d4 .L0 
-     /tmp/ccERNljI.s:509    .text:00000000000002e0 .L0 
-     /tmp/ccERNljI.s:510    .text:00000000000002e0 .L0 
-     /tmp/ccERNljI.s:512    .text:00000000000002e8 .L0 
-     /tmp/ccERNljI.s:513    .text:00000000000002e8 .L0 
-     /tmp/ccERNljI.s:519    .text:00000000000002f0 .L0 
-GAS LISTING /tmp/ccERNljI.s 			page 20
+     /tmp/ccPZecxI.s:391    .text:0000000000000238 .L0 
+     /tmp/ccPZecxI.s:400    .text:0000000000000240 .L0 
+     /tmp/ccPZecxI.s:401    .text:0000000000000240 .L0 
+     /tmp/ccPZecxI.s:403    .text:0000000000000244 .L0 
+     /tmp/ccPZecxI.s:405    .text:0000000000000248 .L0 
+     /tmp/ccPZecxI.s:406    .text:0000000000000248 .L0 
+     /tmp/ccPZecxI.s:408    .text:000000000000024c .L0 
+     /tmp/ccPZecxI.s:411    .text:0000000000000250 .L0 
+     /tmp/ccPZecxI.s:412    .text:0000000000000250 .L0 
+     /tmp/ccPZecxI.s:414    .text:0000000000000254 .L0 
+     /tmp/ccPZecxI.s:416    .text:0000000000000258 .L0 
+     /tmp/ccPZecxI.s:417    .text:0000000000000258 .L0 
+     /tmp/ccPZecxI.s:419    .text:000000000000025c .L0 
+     /tmp/ccPZecxI.s:422    .text:0000000000000260 .L0 
+     /tmp/ccPZecxI.s:425    .text:0000000000000264 .L0 
+     /tmp/ccPZecxI.s:426    .text:0000000000000264 .L0 
+     /tmp/ccPZecxI.s:428    .text:0000000000000268 .L0 
+     /tmp/ccPZecxI.s:430    .text:000000000000026c .L0 
+     /tmp/ccPZecxI.s:431    .text:000000000000026c .L0 
+     /tmp/ccPZecxI.s:433    .text:0000000000000274 .L0 
+     /tmp/ccPZecxI.s:435    .text:0000000000000278 .L0 
+     /tmp/ccPZecxI.s:439    .text:000000000000027c .L0 
+     /tmp/ccPZecxI.s:440    .text:000000000000027c .L0 
+     /tmp/ccPZecxI.s:442    .text:0000000000000280 .L0 
+     /tmp/ccPZecxI.s:445    .text:0000000000000284 .L0 
+     /tmp/ccPZecxI.s:447    .text:0000000000000288 .L0 
+     /tmp/ccPZecxI.s:450    .text:000000000000028c .L0 
+     /tmp/ccPZecxI.s:451    .text:000000000000028c .L0 
+     /tmp/ccPZecxI.s:453    .text:0000000000000290 .L0 
+     /tmp/ccPZecxI.s:455    .text:0000000000000294 .L0 
+     /tmp/ccPZecxI.s:456    .text:0000000000000294 .L0 
+     /tmp/ccPZecxI.s:459    .text:0000000000000298 .L0 
+     /tmp/ccPZecxI.s:460    .text:0000000000000298 .L0 
+     /tmp/ccPZecxI.s:462    .text:000000000000029c .L0 
+     /tmp/ccPZecxI.s:463    .text:000000000000029c .L0 
+     /tmp/ccPZecxI.s:465    .text:00000000000002a0 .L0 
+     /tmp/ccPZecxI.s:466    .text:00000000000002a0 .L0 
+     /tmp/ccPZecxI.s:471    .text:00000000000002ac .L0 
+     /tmp/ccPZecxI.s:472    .text:00000000000002ac .L0 
+     /tmp/ccPZecxI.s:476    .text:00000000000002b8 .L0 
+     /tmp/ccPZecxI.s:477    .text:00000000000002b8 .L0 
+     /tmp/ccPZecxI.s:483    .text:00000000000002bc .L0 
+     /tmp/ccPZecxI.s:484    .text:00000000000002c0 .L0 
+     /tmp/ccPZecxI.s:485    .text:00000000000002c0 .L0 
+     /tmp/ccPZecxI.s:487    .text:00000000000002c4 .L0 
+     /tmp/ccPZecxI.s:488    .text:00000000000002c4 .L0 
+     /tmp/ccPZecxI.s:490    .text:00000000000002c8 .L0 
+     /tmp/ccPZecxI.s:493    .text:00000000000002cc .L0 
+     /tmp/ccPZecxI.s:497    .text:00000000000002d0 .L0 
+     /tmp/ccPZecxI.s:502    .text:00000000000002d0 .L0 
+     /tmp/ccPZecxI.s:503    .text:00000000000002d0 .L0 
+     /tmp/ccPZecxI.s:505    .text:00000000000002d4 .L0 
+     /tmp/ccPZecxI.s:509    .text:00000000000002e0 .L0 
+     /tmp/ccPZecxI.s:510    .text:00000000000002e0 .L0 
+     /tmp/ccPZecxI.s:512    .text:00000000000002e8 .L0 
+     /tmp/ccPZecxI.s:513    .text:00000000000002e8 .L0 
+     /tmp/ccPZecxI.s:519    .text:00000000000002f0 .L0 
+GAS LISTING /tmp/ccPZecxI.s 			page 20
 
 
-     /tmp/ccERNljI.s:520    .text:00000000000002f0 .L0 
-     /tmp/ccERNljI.s:522    .text:00000000000002f4 .L0 
-     /tmp/ccERNljI.s:523    .text:00000000000002f4 .L0 
-     /tmp/ccERNljI.s:525    .text:00000000000002f8 .L0 
-     /tmp/ccERNljI.s:526    .text:00000000000002f8 .L0 
-     /tmp/ccERNljI.s:528    .text:0000000000000300 .L0 
-     /tmp/ccERNljI.s:529    .text:0000000000000300 .L0 
-     /tmp/ccERNljI.s:534    .text:000000000000030c .L0 
-     /tmp/ccERNljI.s:535    .text:000000000000030c .L0 
-     /tmp/ccERNljI.s:539    .text:0000000000000314 .L0 
-     /tmp/ccERNljI.s:540    .text:0000000000000314 .L0 
-     /tmp/ccERNljI.s:541    .text:0000000000000314 .L0 
-     /tmp/ccERNljI.s:542    .text:0000000000000314 .L0 
-     /tmp/ccERNljI.s:547    .text:0000000000000314 .L0 
-     /tmp/ccERNljI.s:550    .text:0000000000000318 .L0 
-     /tmp/ccERNljI.s:551    .text:000000000000031c .L0 
-     /tmp/ccERNljI.s:562    .rodata:0000000000000000 _ZN15MemoryAllocator10DBlockSizeE
-     /tmp/ccERNljI.s:569    .bss:0000000000000000 _ZN15MemoryAllocator11initializedE
-     /tmp/ccERNljI.s:574    .bss:0000000000000008 _ZN15MemoryAllocator8headFreeE
-     /tmp/ccERNljI.s:578    .bss:0000000000000010 _ZN15MemoryAllocator8headFullE
-     /tmp/ccERNljI.s:566    .bss:0000000000000000 .LANCHOR0
-     /tmp/ccERNljI.s:584    .text:000000000000031c .L0 
-     /tmp/ccERNljI.s:22     .text:000000000000000c .L0 
-     /tmp/ccERNljI.s:27     .text:0000000000000018 .L0 
-     /tmp/ccERNljI.s:29     .text:0000000000000024 .L0 
-     /tmp/ccERNljI.s:33     .text:0000000000000030 .L0 
-     /tmp/ccERNljI.s:84     .text:0000000000000084 .L0 
-     /tmp/ccERNljI.s:86     .text:0000000000000090 .L0 
-     /tmp/ccERNljI.s:99     .text:00000000000000ac .L0 
-     /tmp/ccERNljI.s:137    .text:00000000000000e4 .L0 
-     /tmp/ccERNljI.s:237    .text:0000000000000164 .L0 
-     /tmp/ccERNljI.s:242    .text:0000000000000170 .L0 
-     /tmp/ccERNljI.s:258    .text:0000000000000188 .L0 
-     /tmp/ccERNljI.s:368    .text:0000000000000218 .L0 
-     /tmp/ccERNljI.s:431    .text:000000000000026c .L0 
-     /tmp/ccERNljI.s:505    .text:00000000000002d4 .L0 
-     /tmp/ccERNljI.s:510    .text:00000000000002e0 .L0 
-     /tmp/ccERNljI.s:526    .text:00000000000002f8 .L0 
-     /tmp/ccERNljI.s:55     .text:0000000000000064 .L1
-     /tmp/ccERNljI.s:265    .text:0000000000000198 .L17
-     /tmp/ccERNljI.s:273    .text:00000000000001a0 .L18
-     /tmp/ccERNljI.s:174    .text:000000000000011c .L4
-     /tmp/ccERNljI.s:186    .text:0000000000000128 .L20
-     /tmp/ccERNljI.s:198    .text:0000000000000130 .L21
-     /tmp/ccERNljI.s:239    .text:0000000000000170 .L22
-     /tmp/ccERNljI.s:249    .text:0000000000000180 .L23
-     /tmp/ccERNljI.s:154    .text:0000000000000104 .L15
-     /tmp/ccERNljI.s:142    .text:00000000000000f4 .L14
-     /tmp/ccERNljI.s:163    .text:0000000000000110 .L16
-     /tmp/ccERNljI.s:103    .text:00000000000000b8 .L7
-     /tmp/ccERNljI.s:211    .text:0000000000000140 .L9
-     /tmp/ccERNljI.s:222    .text:0000000000000150 .L10
-     /tmp/ccERNljI.s:232    .text:0000000000000160 .L24
-     /tmp/ccERNljI.s:134    .text:00000000000000e4 .L12
-     /tmp/ccERNljI.s:225    .text:0000000000000154 .L11
-     /tmp/ccERNljI.s:309    .text:00000000000001d0 .L25
-     /tmp/ccERNljI.s:318    .text:00000000000001dc .L28
-GAS LISTING /tmp/ccERNljI.s 			page 21
+     /tmp/ccPZecxI.s:520    .text:00000000000002f0 .L0 
+     /tmp/ccPZecxI.s:522    .text:00000000000002f4 .L0 
+     /tmp/ccPZecxI.s:523    .text:00000000000002f4 .L0 
+     /tmp/ccPZecxI.s:525    .text:00000000000002f8 .L0 
+     /tmp/ccPZecxI.s:526    .text:00000000000002f8 .L0 
+     /tmp/ccPZecxI.s:528    .text:0000000000000300 .L0 
+     /tmp/ccPZecxI.s:529    .text:0000000000000300 .L0 
+     /tmp/ccPZecxI.s:534    .text:000000000000030c .L0 
+     /tmp/ccPZecxI.s:535    .text:000000000000030c .L0 
+     /tmp/ccPZecxI.s:539    .text:0000000000000314 .L0 
+     /tmp/ccPZecxI.s:540    .text:0000000000000314 .L0 
+     /tmp/ccPZecxI.s:541    .text:0000000000000314 .L0 
+     /tmp/ccPZecxI.s:542    .text:0000000000000314 .L0 
+     /tmp/ccPZecxI.s:547    .text:0000000000000314 .L0 
+     /tmp/ccPZecxI.s:550    .text:0000000000000318 .L0 
+     /tmp/ccPZecxI.s:551    .text:000000000000031c .L0 
+     /tmp/ccPZecxI.s:562    .rodata:0000000000000000 _ZN15MemoryAllocator10DBlockSizeE
+     /tmp/ccPZecxI.s:569    .bss:0000000000000000 _ZN15MemoryAllocator11initializedE
+     /tmp/ccPZecxI.s:574    .bss:0000000000000008 _ZN15MemoryAllocator8headFreeE
+     /tmp/ccPZecxI.s:578    .bss:0000000000000010 _ZN15MemoryAllocator8headFullE
+     /tmp/ccPZecxI.s:566    .bss:0000000000000000 .LANCHOR0
+     /tmp/ccPZecxI.s:584    .text:000000000000031c .L0 
+     /tmp/ccPZecxI.s:22     .text:000000000000000c .L0 
+     /tmp/ccPZecxI.s:27     .text:0000000000000018 .L0 
+     /tmp/ccPZecxI.s:29     .text:0000000000000024 .L0 
+     /tmp/ccPZecxI.s:33     .text:0000000000000030 .L0 
+     /tmp/ccPZecxI.s:84     .text:0000000000000084 .L0 
+     /tmp/ccPZecxI.s:86     .text:0000000000000090 .L0 
+     /tmp/ccPZecxI.s:99     .text:00000000000000ac .L0 
+     /tmp/ccPZecxI.s:137    .text:00000000000000e4 .L0 
+     /tmp/ccPZecxI.s:237    .text:0000000000000164 .L0 
+     /tmp/ccPZecxI.s:242    .text:0000000000000170 .L0 
+     /tmp/ccPZecxI.s:258    .text:0000000000000188 .L0 
+     /tmp/ccPZecxI.s:368    .text:0000000000000218 .L0 
+     /tmp/ccPZecxI.s:431    .text:000000000000026c .L0 
+     /tmp/ccPZecxI.s:505    .text:00000000000002d4 .L0 
+     /tmp/ccPZecxI.s:510    .text:00000000000002e0 .L0 
+     /tmp/ccPZecxI.s:526    .text:00000000000002f8 .L0 
+     /tmp/ccPZecxI.s:55     .text:0000000000000064 .L1
+     /tmp/ccPZecxI.s:265    .text:0000000000000198 .L17
+     /tmp/ccPZecxI.s:273    .text:00000000000001a0 .L18
+     /tmp/ccPZecxI.s:174    .text:000000000000011c .L4
+     /tmp/ccPZecxI.s:186    .text:0000000000000128 .L20
+     /tmp/ccPZecxI.s:198    .text:0000000000000130 .L21
+     /tmp/ccPZecxI.s:239    .text:0000000000000170 .L22
+     /tmp/ccPZecxI.s:249    .text:0000000000000180 .L23
+     /tmp/ccPZecxI.s:154    .text:0000000000000104 .L15
+     /tmp/ccPZecxI.s:142    .text:00000000000000f4 .L14
+     /tmp/ccPZecxI.s:163    .text:0000000000000110 .L16
+     /tmp/ccPZecxI.s:103    .text:00000000000000b8 .L7
+     /tmp/ccPZecxI.s:211    .text:0000000000000140 .L9
+     /tmp/ccPZecxI.s:222    .text:0000000000000150 .L10
+     /tmp/ccPZecxI.s:232    .text:0000000000000160 .L24
+     /tmp/ccPZecxI.s:134    .text:00000000000000e4 .L12
+     /tmp/ccPZecxI.s:225    .text:0000000000000154 .L11
+     /tmp/ccPZecxI.s:309    .text:00000000000001d0 .L25
+     /tmp/ccPZecxI.s:318    .text:00000000000001dc .L28
+GAS LISTING /tmp/ccPZecxI.s 			page 21
 
 
-     /tmp/ccERNljI.s:538    .text:0000000000000314 .L41
-     /tmp/ccERNljI.s:384    .text:0000000000000230 .L40
-     /tmp/ccERNljI.s:395    .text:0000000000000240 .L47
-     /tmp/ccERNljI.s:373    .text:0000000000000228 .L31
-     /tmp/ccERNljI.s:478    .text:00000000000002bc .L30
-     /tmp/ccERNljI.s:409    .text:0000000000000250 .L33
-     /tmp/ccERNljI.s:420    .text:0000000000000260 .L34
-     /tmp/ccERNljI.s:496    .text:00000000000002d0 .L48
-     /tmp/ccERNljI.s:507    .text:00000000000002e0 .L49
-     /tmp/ccERNljI.s:517    .text:00000000000002f0 .L50
-     /tmp/ccERNljI.s:448    .text:000000000000028c .L38
-     /tmp/ccERNljI.s:436    .text:000000000000027c .L37
-     /tmp/ccERNljI.s:457    .text:0000000000000298 .L39
-     /tmp/ccERNljI.s:423    .text:0000000000000264 .L35
-     /tmp/ccERNljI.s:1044   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/ccERNljI.s:1934   .debug_str:00000000000001f7 .LASF41
-     /tmp/ccERNljI.s:1932   .debug_str:00000000000001df .LASF42
-     /tmp/ccERNljI.s:1956   .debug_str:0000000000000377 .LASF43
-     /tmp/ccERNljI.s:5      .text:0000000000000000 .Ltext0
-     /tmp/ccERNljI.s:581    .text:000000000000031c .Letext0
-     /tmp/ccERNljI.s:1874   .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/ccERNljI.s:1938   .debug_str:00000000000002c2 .LASF0
-     /tmp/ccERNljI.s:1920   .debug_str:0000000000000173 .LASF1
-     /tmp/ccERNljI.s:1912   .debug_str:000000000000012b .LASF2
-     /tmp/ccERNljI.s:1890   .debug_str:000000000000004c .LASF4
-     /tmp/ccERNljI.s:1918   .debug_str:0000000000000161 .LASF3
-     /tmp/ccERNljI.s:1880   .debug_str:0000000000000023 .LASF5
-     /tmp/ccERNljI.s:1876   .debug_str:0000000000000000 .LASF6
-     /tmp/ccERNljI.s:1904   .debug_str:00000000000000df .LASF7
-     /tmp/ccERNljI.s:1944   .debug_str:00000000000002fd .LASF8
-     /tmp/ccERNljI.s:1888   .debug_str:000000000000003e .LASF9
-     /tmp/ccERNljI.s:1976   .debug_str:0000000000000416 .LASF10
-     /tmp/ccERNljI.s:1908   .debug_str:00000000000000fb .LASF11
-     /tmp/ccERNljI.s:1964   .debug_str:00000000000003c9 .LASF12
-     /tmp/ccERNljI.s:1950   .debug_str:000000000000033f .LASF13
-     /tmp/ccERNljI.s:1922   .debug_str:0000000000000186 .LASF14
-     /tmp/ccERNljI.s:1900   .debug_str:00000000000000c0 .LASF15
-     /tmp/ccERNljI.s:1946   .debug_str:000000000000030d .LASF16
-     /tmp/ccERNljI.s:1878   .debug_str:0000000000000013 .LASF28
-     /tmp/ccERNljI.s:1936   .debug_str:00000000000002bb .LASF44
-     /tmp/ccERNljI.s:1970   .debug_str:00000000000003ed .LASF17
-     /tmp/ccERNljI.s:1882   .debug_str:000000000000002a .LASF18
-     /tmp/ccERNljI.s:1974   .debug_str:0000000000000411 .LASF19
-     /tmp/ccERNljI.s:1898   .debug_str:00000000000000bb .LASF24
-     /tmp/ccERNljI.s:1948   .debug_str:0000000000000323 .LASF26
-     /tmp/ccERNljI.s:1968   .debug_str:00000000000003e3 .LASF20
-     /tmp/ccERNljI.s:1960   .debug_str:000000000000039f .LASF22
-     /tmp/ccERNljI.s:1952   .debug_str:000000000000034f .LASF21
-     /tmp/ccERNljI.s:1910   .debug_str:000000000000010a .LASF23
-     /tmp/ccERNljI.s:1896   .debug_str:000000000000009f .LASF45
-     /tmp/ccERNljI.s:1966   .debug_str:00000000000003d9 .LASF46
-     /tmp/ccERNljI.s:1914   .debug_str:0000000000000139 .LASF47
-     /tmp/ccERNljI.s:1962   .debug_str:00000000000003c0 .LASF25
-     /tmp/ccERNljI.s:1892   .debug_str:0000000000000053 .LASF27
-     /tmp/ccERNljI.s:1940   .debug_str:00000000000002cf .LASF48
-     /tmp/ccERNljI.s:1930   .debug_str:00000000000001c6 .LASF29
-     /tmp/ccERNljI.s:1906   .debug_str:00000000000000f2 .LASF30
-GAS LISTING /tmp/ccERNljI.s 			page 22
+     /tmp/ccPZecxI.s:538    .text:0000000000000314 .L41
+     /tmp/ccPZecxI.s:384    .text:0000000000000230 .L40
+     /tmp/ccPZecxI.s:395    .text:0000000000000240 .L47
+     /tmp/ccPZecxI.s:373    .text:0000000000000228 .L31
+     /tmp/ccPZecxI.s:478    .text:00000000000002bc .L30
+     /tmp/ccPZecxI.s:409    .text:0000000000000250 .L33
+     /tmp/ccPZecxI.s:420    .text:0000000000000260 .L34
+     /tmp/ccPZecxI.s:496    .text:00000000000002d0 .L48
+     /tmp/ccPZecxI.s:507    .text:00000000000002e0 .L49
+     /tmp/ccPZecxI.s:517    .text:00000000000002f0 .L50
+     /tmp/ccPZecxI.s:448    .text:000000000000028c .L38
+     /tmp/ccPZecxI.s:436    .text:000000000000027c .L37
+     /tmp/ccPZecxI.s:457    .text:0000000000000298 .L39
+     /tmp/ccPZecxI.s:423    .text:0000000000000264 .L35
+     /tmp/ccPZecxI.s:1044   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccPZecxI.s:1934   .debug_str:00000000000001f7 .LASF41
+     /tmp/ccPZecxI.s:1932   .debug_str:00000000000001df .LASF42
+     /tmp/ccPZecxI.s:1956   .debug_str:0000000000000377 .LASF43
+     /tmp/ccPZecxI.s:5      .text:0000000000000000 .Ltext0
+     /tmp/ccPZecxI.s:581    .text:000000000000031c .Letext0
+     /tmp/ccPZecxI.s:1874   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccPZecxI.s:1938   .debug_str:00000000000002c2 .LASF0
+     /tmp/ccPZecxI.s:1920   .debug_str:0000000000000173 .LASF1
+     /tmp/ccPZecxI.s:1912   .debug_str:000000000000012b .LASF2
+     /tmp/ccPZecxI.s:1890   .debug_str:000000000000004c .LASF4
+     /tmp/ccPZecxI.s:1918   .debug_str:0000000000000161 .LASF3
+     /tmp/ccPZecxI.s:1880   .debug_str:0000000000000023 .LASF5
+     /tmp/ccPZecxI.s:1876   .debug_str:0000000000000000 .LASF6
+     /tmp/ccPZecxI.s:1904   .debug_str:00000000000000df .LASF7
+     /tmp/ccPZecxI.s:1944   .debug_str:00000000000002fd .LASF8
+     /tmp/ccPZecxI.s:1888   .debug_str:000000000000003e .LASF9
+     /tmp/ccPZecxI.s:1976   .debug_str:0000000000000416 .LASF10
+     /tmp/ccPZecxI.s:1908   .debug_str:00000000000000fb .LASF11
+     /tmp/ccPZecxI.s:1964   .debug_str:00000000000003c9 .LASF12
+     /tmp/ccPZecxI.s:1950   .debug_str:000000000000033f .LASF13
+     /tmp/ccPZecxI.s:1922   .debug_str:0000000000000186 .LASF14
+     /tmp/ccPZecxI.s:1900   .debug_str:00000000000000c0 .LASF15
+     /tmp/ccPZecxI.s:1946   .debug_str:000000000000030d .LASF16
+     /tmp/ccPZecxI.s:1878   .debug_str:0000000000000013 .LASF28
+     /tmp/ccPZecxI.s:1936   .debug_str:00000000000002bb .LASF44
+     /tmp/ccPZecxI.s:1970   .debug_str:00000000000003ed .LASF17
+     /tmp/ccPZecxI.s:1882   .debug_str:000000000000002a .LASF18
+     /tmp/ccPZecxI.s:1974   .debug_str:0000000000000411 .LASF19
+     /tmp/ccPZecxI.s:1898   .debug_str:00000000000000bb .LASF24
+     /tmp/ccPZecxI.s:1948   .debug_str:0000000000000323 .LASF26
+     /tmp/ccPZecxI.s:1968   .debug_str:00000000000003e3 .LASF20
+     /tmp/ccPZecxI.s:1960   .debug_str:000000000000039f .LASF22
+     /tmp/ccPZecxI.s:1952   .debug_str:000000000000034f .LASF21
+     /tmp/ccPZecxI.s:1910   .debug_str:000000000000010a .LASF23
+     /tmp/ccPZecxI.s:1896   .debug_str:000000000000009f .LASF45
+     /tmp/ccPZecxI.s:1966   .debug_str:00000000000003d9 .LASF46
+     /tmp/ccPZecxI.s:1914   .debug_str:0000000000000139 .LASF47
+     /tmp/ccPZecxI.s:1962   .debug_str:00000000000003c0 .LASF25
+     /tmp/ccPZecxI.s:1892   .debug_str:0000000000000053 .LASF27
+     /tmp/ccPZecxI.s:1940   .debug_str:00000000000002cf .LASF48
+     /tmp/ccPZecxI.s:1930   .debug_str:00000000000001c6 .LASF29
+     /tmp/ccPZecxI.s:1906   .debug_str:00000000000000f2 .LASF30
+GAS LISTING /tmp/ccPZecxI.s 			page 22
 
 
-     /tmp/ccERNljI.s:1902   .debug_str:00000000000000d6 .LASF31
-     /tmp/ccERNljI.s:1916   .debug_str:0000000000000155 .LASF32
-     /tmp/ccERNljI.s:1884   .debug_str:000000000000002f .LASF49
-     /tmp/ccERNljI.s:1894   .debug_str:0000000000000073 .LASF50
-     /tmp/ccERNljI.s:1958   .debug_str:000000000000039a .LASF33
-     /tmp/ccERNljI.s:1954   .debug_str:0000000000000358 .LASF34
-     /tmp/ccERNljI.s:1972   .debug_str:00000000000003f2 .LASF35
-     /tmp/ccERNljI.s:1942   .debug_str:00000000000002da .LASF36
-     /tmp/ccERNljI.s:1928   .debug_str:00000000000001a4 .LASF37
-     /tmp/ccERNljI.s:284    .text:00000000000001a8 .LFB3
-     /tmp/ccERNljI.s:338    .text:00000000000001fc .LFE3
-     /tmp/ccERNljI.s:1886   .debug_str:0000000000000039 .LASF38
-     /tmp/ccERNljI.s:344    .text:00000000000001fc .LFB2
-     /tmp/ccERNljI.s:552    .text:000000000000031c .LFE2
-     /tmp/ccERNljI.s:1646   .debug_loc:0000000000000000 .LLST3
-     /tmp/ccERNljI.s:1848   .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/ccERNljI.s:1716   .debug_loc:00000000000000f8 .LLST4
-     /tmp/ccERNljI.s:1926   .debug_str:000000000000019b .LASF39
-     /tmp/ccERNljI.s:1731   .debug_loc:0000000000000141 .LLST5
-     /tmp/ccERNljI.s:469    .text:00000000000002ac .LVL30
-     /tmp/ccERNljI.s:474    .text:00000000000002b8 .LVL31
-     /tmp/ccERNljI.s:532    .text:000000000000030c .LVL37
-     /tmp/ccERNljI.s:70     .text:0000000000000070 .LFB1
-     /tmp/ccERNljI.s:278    .text:00000000000001a8 .LFE1
-     /tmp/ccERNljI.s:1742   .debug_loc:0000000000000177 .LLST0
-     /tmp/ccERNljI.s:1790   .debug_loc:000000000000023b .LLST1
-     /tmp/ccERNljI.s:1924   .debug_str:0000000000000192 .LASF40
-     /tmp/ccERNljI.s:1824   .debug_loc:00000000000002e1 .LLST2
-     /tmp/ccERNljI.s:10     .text:0000000000000000 .LFB0
-     /tmp/ccERNljI.s:64     .text:0000000000000070 .LFE0
-     /tmp/ccERNljI.s:347    .text:00000000000001fc .LVL20
-     /tmp/ccERNljI.s:364    .text:0000000000000218 .LVL21
-     /tmp/ccERNljI.s:392    .text:000000000000023c .LVL25
-     /tmp/ccERNljI.s:394    .text:0000000000000240 .LVL26
-     /tmp/ccERNljI.s:467    .text:00000000000002a4 .LVL29
-     /tmp/ccERNljI.s:495    .text:00000000000002d0 .LVL33
-     /tmp/ccERNljI.s:514    .text:00000000000002ec .LVL34
-     /tmp/ccERNljI.s:516    .text:00000000000002f0 .LVL35
-     /tmp/ccERNljI.s:530    .text:0000000000000304 .LVL36
-     /tmp/ccERNljI.s:537    .text:0000000000000314 .LVL38
-     /tmp/ccERNljI.s:548    .text:0000000000000318 .LVL39
-     /tmp/ccERNljI.s:369    .text:0000000000000220 .LVL22
-     /tmp/ccERNljI.s:372    .text:0000000000000228 .LVL23
-     /tmp/ccERNljI.s:491    .text:00000000000002c8 .LVL32
-     /tmp/ccERNljI.s:437    .text:000000000000027c .LVL27
-     /tmp/ccERNljI.s:443    .text:0000000000000284 .LVL28
-     /tmp/ccERNljI.s:73     .text:0000000000000070 .LVL0
-     /tmp/ccERNljI.s:102    .text:00000000000000b8 .LVL3
-     /tmp/ccERNljI.s:133    .text:00000000000000e4 .LVL5
-     /tmp/ccERNljI.s:185    .text:0000000000000128 .LVL9
-     /tmp/ccERNljI.s:203    .text:0000000000000134 .LVL11
-     /tmp/ccERNljI.s:264    .text:0000000000000198 .LVL15
-     /tmp/ccERNljI.s:270    .text:000000000000019c .LVL16
-     /tmp/ccERNljI.s:272    .text:00000000000001a0 .LVL17
-     /tmp/ccERNljI.s:275    .text:00000000000001a4 .LVL18
-     /tmp/ccERNljI.s:95     .text:00000000000000ac .LVL1
-     /tmp/ccERNljI.s:100    .text:00000000000000b4 .LVL2
-GAS LISTING /tmp/ccERNljI.s 			page 23
+     /tmp/ccPZecxI.s:1902   .debug_str:00000000000000d6 .LASF31
+     /tmp/ccPZecxI.s:1916   .debug_str:0000000000000155 .LASF32
+     /tmp/ccPZecxI.s:1884   .debug_str:000000000000002f .LASF49
+     /tmp/ccPZecxI.s:1894   .debug_str:0000000000000073 .LASF50
+     /tmp/ccPZecxI.s:1958   .debug_str:000000000000039a .LASF33
+     /tmp/ccPZecxI.s:1954   .debug_str:0000000000000358 .LASF34
+     /tmp/ccPZecxI.s:1972   .debug_str:00000000000003f2 .LASF35
+     /tmp/ccPZecxI.s:1942   .debug_str:00000000000002da .LASF36
+     /tmp/ccPZecxI.s:1928   .debug_str:00000000000001a4 .LASF37
+     /tmp/ccPZecxI.s:284    .text:00000000000001a8 .LFB3
+     /tmp/ccPZecxI.s:338    .text:00000000000001fc .LFE3
+     /tmp/ccPZecxI.s:1886   .debug_str:0000000000000039 .LASF38
+     /tmp/ccPZecxI.s:344    .text:00000000000001fc .LFB2
+     /tmp/ccPZecxI.s:552    .text:000000000000031c .LFE2
+     /tmp/ccPZecxI.s:1646   .debug_loc:0000000000000000 .LLST3
+     /tmp/ccPZecxI.s:1848   .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccPZecxI.s:1716   .debug_loc:00000000000000f8 .LLST4
+     /tmp/ccPZecxI.s:1926   .debug_str:000000000000019b .LASF39
+     /tmp/ccPZecxI.s:1731   .debug_loc:0000000000000141 .LLST5
+     /tmp/ccPZecxI.s:469    .text:00000000000002ac .LVL30
+     /tmp/ccPZecxI.s:474    .text:00000000000002b8 .LVL31
+     /tmp/ccPZecxI.s:532    .text:000000000000030c .LVL37
+     /tmp/ccPZecxI.s:70     .text:0000000000000070 .LFB1
+     /tmp/ccPZecxI.s:278    .text:00000000000001a8 .LFE1
+     /tmp/ccPZecxI.s:1742   .debug_loc:0000000000000177 .LLST0
+     /tmp/ccPZecxI.s:1790   .debug_loc:000000000000023b .LLST1
+     /tmp/ccPZecxI.s:1924   .debug_str:0000000000000192 .LASF40
+     /tmp/ccPZecxI.s:1824   .debug_loc:00000000000002e1 .LLST2
+     /tmp/ccPZecxI.s:10     .text:0000000000000000 .LFB0
+     /tmp/ccPZecxI.s:64     .text:0000000000000070 .LFE0
+     /tmp/ccPZecxI.s:347    .text:00000000000001fc .LVL20
+     /tmp/ccPZecxI.s:364    .text:0000000000000218 .LVL21
+     /tmp/ccPZecxI.s:392    .text:000000000000023c .LVL25
+     /tmp/ccPZecxI.s:394    .text:0000000000000240 .LVL26
+     /tmp/ccPZecxI.s:467    .text:00000000000002a4 .LVL29
+     /tmp/ccPZecxI.s:495    .text:00000000000002d0 .LVL33
+     /tmp/ccPZecxI.s:514    .text:00000000000002ec .LVL34
+     /tmp/ccPZecxI.s:516    .text:00000000000002f0 .LVL35
+     /tmp/ccPZecxI.s:530    .text:0000000000000304 .LVL36
+     /tmp/ccPZecxI.s:537    .text:0000000000000314 .LVL38
+     /tmp/ccPZecxI.s:548    .text:0000000000000318 .LVL39
+     /tmp/ccPZecxI.s:369    .text:0000000000000220 .LVL22
+     /tmp/ccPZecxI.s:372    .text:0000000000000228 .LVL23
+     /tmp/ccPZecxI.s:491    .text:00000000000002c8 .LVL32
+     /tmp/ccPZecxI.s:437    .text:000000000000027c .LVL27
+     /tmp/ccPZecxI.s:443    .text:0000000000000284 .LVL28
+     /tmp/ccPZecxI.s:73     .text:0000000000000070 .LVL0
+     /tmp/ccPZecxI.s:102    .text:00000000000000b8 .LVL3
+     /tmp/ccPZecxI.s:133    .text:00000000000000e4 .LVL5
+     /tmp/ccPZecxI.s:185    .text:0000000000000128 .LVL9
+     /tmp/ccPZecxI.s:203    .text:0000000000000134 .LVL11
+     /tmp/ccPZecxI.s:264    .text:0000000000000198 .LVL15
+     /tmp/ccPZecxI.s:270    .text:000000000000019c .LVL16
+     /tmp/ccPZecxI.s:272    .text:00000000000001a0 .LVL17
+     /tmp/ccPZecxI.s:275    .text:00000000000001a4 .LVL18
+     /tmp/ccPZecxI.s:95     .text:00000000000000ac .LVL1
+     /tmp/ccPZecxI.s:100    .text:00000000000000b4 .LVL2
+GAS LISTING /tmp/ccPZecxI.s 			page 23
 
 
-     /tmp/ccERNljI.s:173    .text:000000000000011c .LVL8
-     /tmp/ccERNljI.s:246    .text:000000000000017c .LVL12
-     /tmp/ccERNljI.s:248    .text:0000000000000180 .LVL13
-     /tmp/ccERNljI.s:262    .text:0000000000000194 .LVL14
-     /tmp/ccERNljI.s:143    .text:00000000000000f4 .LVL6
-     /tmp/ccERNljI.s:149    .text:00000000000000fc .LVL7
-     /tmp/ccERNljI.s:585    .debug_info:0000000000000000 .Ldebug_info0
-     /tmp/ccERNljI.s:106    .text:00000000000000bc .LBB3
-     /tmp/ccERNljI.s:175    .text:000000000000011c .LBE3
-     /tmp/ccERNljI.s:189    .text:0000000000000128 .LBB4
-     /tmp/ccERNljI.s:191    .text:0000000000000128 .LBE4
-     /tmp/ccERNljI.s:199    .text:0000000000000130 .LBB5
-     /tmp/ccERNljI.s:266    .text:0000000000000198 .LBE5
-     /tmp/ccERNljI.s:366    .text:0000000000000218 .LBB7
-     /tmp/ccERNljI.s:374    .text:0000000000000228 .LBE7
-     /tmp/ccERNljI.s:376    .text:0000000000000228 .LBB13
-     /tmp/ccERNljI.s:389    .text:0000000000000238 .LBE13
-     /tmp/ccERNljI.s:396    .text:0000000000000240 .LBB14
-     /tmp/ccERNljI.s:481    .text:00000000000002bc .LBE14
-     /tmp/ccERNljI.s:498    .text:00000000000002d0 .LBB15
-     /tmp/ccERNljI.s:545    .text:0000000000000314 .LBE15
-     /tmp/ccERNljI.s:398    .text:0000000000000240 .LBB9
-     /tmp/ccERNljI.s:479    .text:00000000000002bc .LBE9
-     /tmp/ccERNljI.s:500    .text:00000000000002d0 .LBB10
-     /tmp/ccERNljI.s:543    .text:0000000000000314 .LBE10
+     /tmp/ccPZecxI.s:173    .text:000000000000011c .LVL8
+     /tmp/ccPZecxI.s:246    .text:000000000000017c .LVL12
+     /tmp/ccPZecxI.s:248    .text:0000000000000180 .LVL13
+     /tmp/ccPZecxI.s:262    .text:0000000000000194 .LVL14
+     /tmp/ccPZecxI.s:143    .text:00000000000000f4 .LVL6
+     /tmp/ccPZecxI.s:149    .text:00000000000000fc .LVL7
+     /tmp/ccPZecxI.s:585    .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccPZecxI.s:106    .text:00000000000000bc .LBB3
+     /tmp/ccPZecxI.s:175    .text:000000000000011c .LBE3
+     /tmp/ccPZecxI.s:189    .text:0000000000000128 .LBB4
+     /tmp/ccPZecxI.s:191    .text:0000000000000128 .LBE4
+     /tmp/ccPZecxI.s:199    .text:0000000000000130 .LBB5
+     /tmp/ccPZecxI.s:266    .text:0000000000000198 .LBE5
+     /tmp/ccPZecxI.s:366    .text:0000000000000218 .LBB7
+     /tmp/ccPZecxI.s:374    .text:0000000000000228 .LBE7
+     /tmp/ccPZecxI.s:376    .text:0000000000000228 .LBB13
+     /tmp/ccPZecxI.s:389    .text:0000000000000238 .LBE13
+     /tmp/ccPZecxI.s:396    .text:0000000000000240 .LBB14
+     /tmp/ccPZecxI.s:481    .text:00000000000002bc .LBE14
+     /tmp/ccPZecxI.s:498    .text:00000000000002d0 .LBB15
+     /tmp/ccPZecxI.s:545    .text:0000000000000314 .LBE15
+     /tmp/ccPZecxI.s:398    .text:0000000000000240 .LBB9
+     /tmp/ccPZecxI.s:479    .text:00000000000002bc .LBE9
+     /tmp/ccPZecxI.s:500    .text:00000000000002d0 .LBB10
+     /tmp/ccPZecxI.s:543    .text:0000000000000314 .LBE10
 
 UNDEFINED SYMBOLS
 HEAP_START_ADDR

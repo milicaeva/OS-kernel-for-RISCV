@@ -2538,7 +2538,7 @@ static void producerKeyboard(void *arg) {
     int i = 0;
     80002940:	00000913          	li	s2,0
     80002944:	00c0006f          	j	80002950 <_ZL16producerKeyboardPv+0x2c>
-    while ((key = getc()) != 0x1b) {
+    while ((key = getc()) != 0x35) {
         data->buffer->put(key);
         i++;
 
@@ -2546,11 +2546,11 @@ static void producerKeyboard(void *arg) {
             thread_dispatch();
     80002948:	00000097          	auipc	ra,0x0
     8000294c:	990080e7          	jalr	-1648(ra) # 800022d8 <_Z15thread_dispatchv>
-    while ((key = getc()) != 0x1b) {
+    while ((key = getc()) != 0x35) {
     80002950:	00000097          	auipc	ra,0x0
     80002954:	b1c080e7          	jalr	-1252(ra) # 8000246c <_Z4getcv>
     80002958:	0005059b          	sext.w	a1,a0
-    8000295c:	01b00793          	li	a5,27
+    8000295c:	03500793          	li	a5,53
     80002960:	02f58a63          	beq	a1,a5,80002994 <_ZL16producerKeyboardPv+0x70>
         data->buffer->put(key);
     80002964:	0084b503          	ld	a0,8(s1)
@@ -4306,18 +4306,18 @@ class Producer : public Thread {
     80003e2c:	00913423          	sd	s1,8(sp)
     80003e30:	02010413          	addi	s0,sp,32
     80003e34:	00050493          	mv	s1,a0
-        while ((key = getc()) != 0x1b) {
+        while ((key = getc()) != 0x35) {
     80003e38:	ffffe097          	auipc	ra,0xffffe
     80003e3c:	634080e7          	jalr	1588(ra) # 8000246c <_Z4getcv>
     80003e40:	0005059b          	sext.w	a1,a0
-    80003e44:	01b00793          	li	a5,27
+    80003e44:	03500793          	li	a5,53
     80003e48:	00f58c63          	beq	a1,a5,80003e60 <_ZN16ProducerKeyborad3runEv+0x40>
             td->buffer->put(key);
     80003e4c:	0204b783          	ld	a5,32(s1)
     80003e50:	0087b503          	ld	a0,8(a5)
     80003e54:	00001097          	auipc	ra,0x1
     80003e58:	33c080e7          	jalr	828(ra) # 80005190 <_ZN9BufferCPP3putEi>
-        while ((key = getc()) != 0x1b) {
+        while ((key = getc()) != 0x35) {
     80003e5c:	fddff06f          	j	80003e38 <_ZN16ProducerKeyborad3runEv+0x18>
         threadEnd = 1;
     80003e60:	00100793          	li	a5,1
