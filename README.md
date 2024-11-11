@@ -1,0 +1,1 @@
+The OS kernel is designed for the RISC-V architecture and operates within the QEMU emulator. It is built entirely from scratch, without relying on any external libraries or host OS system calls (including threads, memory allocation, semaphores, interrupts, etc.).
